@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Content Colors */
+  --color-content-ultra: var(--content-ultra);
+  --color-content-strong: var(--content-strong);
+  --color-content-bold: var(--content-bold);
+  --color-content-default: var(--content-default);
+  --color-content-medium: var(--content-medium);
+  --color-content-soft: var(--content-soft);
+  --color-content-light: var(--content-light);
+  --color-content-extra-light: var(--content-extra-light);
+  --color-content-faint: var(--content-faint);
+  --color-content-subtle: var(--content-subtle);
+  --color-content-deep: var(--content-deep);
+  --color-content-brand-strong: var(--content-brand-strong);
+  --color-content-brand-light: var(--content-brand-light);
+  --color-content-brand-faint: var(--content-brand-faint);
+  --color-content-success-strong: var(--content-success-strong);
+  --color-content-success-light: var(--content-success-light);
+  --color-content-success-subtle: var(--content-success-subtle);
+  --color-content-warning-strong: var(--content-warning-strong);
+  --color-content-warning-light: var(--content-warning-light);
+  --color-content-warning-subtle: var(--content-warning-subtle);
+  --color-content-error-strong: var(--content-error-strong);
+  --color-content-error-light: var(--content-error-light);
+  --color-content-error-subtle: var(--content-error-subtle);
+  --color-content-dark-fixed: var(--content-dark-fixed);
+  --color-content-white-fixed: var(--content-white-fixed);
+
+  /* Surface Colors */
+  --color-surface-light: var(--surface-light);
+  --color-surface-faint: var(--surface-faint);
+  --color-surface-base-ultra: var(--surface-base-ultra);
+  --color-surface-base-strong: var(--surface-base-strong);
+  --color-surface-base-bold: var(--surface-base-bold);
+  --color-surface-base-default: var(--surface-base-default);
+  --color-surface-base-medium: var(--surface-base-medium);
+  --color-surface-base-soft: var(--surface-base-soft);
+  --color-surface-base-light: var(--surface-base-light);
+  --color-surface-base-extra-light: var(--surface-base-extra-light);
+  --color-surface-base-faint: var(--surface-base-faint);
+  --color-surface-base-subtle: var(--surface-base-subtle);
+  --color-surface-base-dark: var(--surface-base-dark);
+  --color-surface-base-white: var(--surface-base-white);
+  --color-surface-brand-strong: var(--surface-brand-strong);
+  --color-surface-brand-default: var(--surface-brand-default);
+  --color-surface-brand-subtle: var(--surface-brand-subtle);
+  --color-surface-success-default: var(--surface-success-default);
+  --color-surface-success-subtle: var(--surface-success-subtle);
+  --color-surface-warning-default: var(--surface-warning-default);
+  --color-surface-warning-subtle: var(--surface-warning-subtle);
+  --color-surface-error-default: var(--surface-error-default);
+  --color-surface-error-subtle: var(--surface-error-subtle);
+  --color-surface-dark-fixed: var(--surface-dark-fixed);
+  --color-surface-white-fixed: var(--surface-white-fixed);
+
+  /* Border Colors */
+  --color-border-soft: var(--border-soft);
+  --color-border-light: var(--border-light);
+  --color-border-extra-light: var(--border-extra-light);
+  --color-border-faint: var(--border-faint);
+  --color-border-medium: var(--border-medium);
+  --color-border-brand: var(--border-brand);
+  --color-border-deep: var(--border-deep);
+
+  /* Background Colors */
+  --color-background-dark: var(--background-dark);
+  --color-background-white: var(--background-white);
+}
+
+:root {
+  /* Content Colors */
+  --content-ultra: #020203;
+  --content-strong: #22232A;
+  --content-bold: #22232A;
+  --content-default: #373842;
+  --content-medium: #4E4E5C;
+  --content-soft: #656678;
+  --content-light: #7E7F94;
+  --content-extra-light: #9798B6;
+  --content-faint: #B1B3D0;
+  --content-subtle: #CCCEEF;
+  --content-deep: #FFFFFF;
+  --content-brand-strong: #3D1D86;
+  --content-brand-light: #693EE0;
+  --content-brand-faint: #CAC0FF;
+  --content-success-strong: #16643B;
+  --content-success-light: #1DAF61;
+  --content-success-subtle: #D0FBE9;
+  --content-warning-strong: #7A2E0E;
+  --content-warning-light: #DC6803;
+  --content-warning-subtle: #FEF0C7;
+  --content-error-strong: #AD1F2B;
+  --content-error-light: #D02533;
+  --content-error-subtle: #FFD5D8;
+  --content-dark-fixed: #020203;
+  --content-white-fixed: #FFFFFF;
+
+  /* Surface Colors */
+  --surface-light: #FFFFFF;
+  --surface-light: #F0F0F0;
+  --surface-faint: #FFFFFF;
+  --surface-base-ultra: rgba(14, 18, 27, 0.48);
+  --surface-base-strong: rgba(14, 18, 27, 0.40);
+  --surface-base-bold: rgba(14, 18, 27, 0.32);
+  --surface-base-default: rgba(14, 18, 27, 0.24);
+  --surface-base-medium: rgba(14, 18, 27, 0.16);
+  --surface-base-soft: rgba(14, 18, 27, 0.12);
+  --surface-base-light: rgba(14, 18, 27, 0.08);
+  --surface-base-extra-light: rgba(14, 18, 27, 0.06);
+  --surface-base-faint: rgba(14, 18, 27, 0.04);
+  --surface-base-subtle: rgba(34, 35, 42, 0.02);
+  --surface-base-dark: #FFFFFF;
+  --surface-base-white: #020203;
+  --surface-brand-strong: #8C71F6;
+  --surface-brand-default: #693EE0;
+  --surface-brand-subtle: rgba(125, 82, 244, 0.20);
+  --surface-success-default: #1DAF61;
+  --surface-success-subtle: rgba(29, 175, 97, 0.15);
+  --surface-warning-default: #DC6803;
+  --surface-warning-subtle: rgba(220, 104, 3, 0.15);
+  --surface-error-default: #E93544;
+  --surface-error-subtle: rgba(233, 53, 68, 0.20);
+  --surface-dark-fixed: #020203;
+  --surface-white-fixed: #FFFFFF;
+
+  /* Border Colors */
+  --border-soft:rgba(14, 18, 27, 0.08);
+  --border-light: rgba(14, 18, 27, 0.06);
+  --border-extra-light: rgba(14, 18, 27, 0.04);
+  --border-faint: rgba(34, 35, 42, 0.02);
+  --border-medium: rgba(14, 18, 27, 0.16);
+  --border-brand: #693EE0;
+  --border-deep: #FFFFFF;
+
+  /* Background Colors */
+  --background-dark: #FFFFFF;
+  --background-white: #020203;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Content Colors */
+    --content-ultra: #FFFFFF;
+    --content-strong: #CCCEEF;
+    --content-bold: #B1B3D0;
+    --content-default: #9798B6;
+    --content-medium: #7E7F94;
+    --content-soft: #656678;
+    --content-light: #4E4E5C;
+    --content-extra-light: #373842;
+    --content-faint: #22232A;
+    --content-subtle: #0F0F14;
+    --content-deep: #020203;
+    --content-brand-strong: #DCD5FF;
+    --content-brand-light: #8C71F6;
+    --content-brand-faint: #4C25A7;
+    --content-success-strong: #D0FBE9;
+    --content-success-light: #1DAF61;
+    --content-success-subtle: #16643B;
+    --content-warning-strong: #FEF0C7;
+    --content-warning-light: #F79009;
+    --content-warning-subtle: #7A2E0E;
+    --content-error-strong: #FFC0C5;
+    --content-error-light: #E93544;
+    --content-error-subtle: #8B1822;
+    --content-dark-fixed: #020203;
+    --content-white-fixed: #FFFFFF;
+
+    /* Surface Colors */
+    --surface-light: #22232A;
+    --surface-light: #0F0F14;
+    --surface-faint: #181822;
+    --surface-base-ultra: rgba(204, 206, 239, 0.48);
+    --surface-base-strong: rgba(204, 206, 239, 0.40);
+    --surface-base-bold: rgba(204, 206, 239, 0.32);
+    --surface-base-default: rgba(204, 206, 239, 0.24);
+    --surface-base-medium: rgba(204, 206, 239, 0.16);
+    --surface-base-soft: rgba(204, 206, 239, 0.12);
+    --surface-base-light: rgba(204, 206, 239, 0.8);
+    --surface-base-extra-light: rgba(204, 206, 239, 0.6);
+    --surface-base-faint: rgba(204, 206, 239, 0.4);
+    --surface-base-subtle: rgba(204, 206, 239, 0.2);
+    --surface-base-dark: #020203;
+    --surface-base-white: #FFFFFF;
+    --surface-brand-strong: #8C71F6;
+    --surface-brand-default: #693EE0;
+    --surface-brand-subtle: rgba(125, 82, 244, 0.20);
+    --surface-success-default: #1DAF61;
+    --surface-success-subtle: rgba(29, 175, 97, 0.15);
+    --surface-warning-default: #DC6803;
+    --surface-warning-subtle: rgba(220, 104, 3, 0.15);
+    --surface-error-default: #E93544;
+    --surface-error-subtle: rgba(233, 53, 68, 0.20);
+    --surface-dark-fixed: #020203;
+    --surface-white-fixed: #FFFFFF;
+
+    /* Border Colors */
+    --border-soft:rgb(204, 206, 239, 0.12);
+    --border-light: rgb(204, 206, 239, 0.08);
+    --border-extra-light: rgb(204, 206, 239, 0.06);
+    --border-faint: rgb(204, 206, 239, 0.04);
+    --border-medium: rgb(204, 206, 239, 0.4);
+    --border-brand: #7D52F4;
+    --border-deep: #020203;
+
+    /* Background Colors */
+    --background-dark: #020203;
+    --background-white: #FFFFFF;
+  }
+}
+
+body {
+  font-family: var(--font-inter);
+}
