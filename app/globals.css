@@ -30,6 +30,7 @@
   --color-content-white-fixed: var(--content-white-fixed);
 
   /* Surface Colors */
+  --color-main-bg: var(--main-bg);
   --color-surface-secondary: var(--surface-secondary);
   --color-surface-light: var(--surface-light);
   --color-surface-extra-light: var(--surface-extra-light);
@@ -102,6 +103,7 @@
   --content-white-fixed: #FFFFFF;
 
   /* Surface Colors */
+  --main-bg: #06060E;
   --surface-secondary: #DD00AC;
   --surface-light: #FFFFFF;
   --surface-extra-light: #F0F0F0;
@@ -175,6 +177,7 @@
     --content-white-fixed: #FFFFFF;
 
     /* Surface Colors */
+    --main-bg: #06060E;
     --surface-secondary: #DD00AC;
     --surface-light: #22232A;
     --surface-extra-light: #0F0F14;
@@ -185,10 +188,10 @@
     --surface-base-default: rgba(204, 206, 239, 0.24);
     --surface-base-medium: rgba(204, 206, 239, 0.16);
     --surface-base-soft: rgba(204, 206, 239, 0.12);
-    --surface-base-light: rgba(204, 206, 239, 0.8);
-    --surface-base-extra-light: rgba(204, 206, 239, 0.6);
-    --surface-base-faint: rgba(204, 206, 239, 0.4);
-    --surface-base-subtle: rgba(204, 206, 239, 0.2);
+    --surface-base-light: rgba(204, 206, 239, 0.08);
+    --surface-base-extra-light: rgb(204, 206, 239, 0.06);
+    --surface-base-faint: rgba(204, 206, 239, 0.04);
+    --surface-base-subtle: rgba(204, 206, 239, 0.02);
     --surface-base-dark: #020203;
     --surface-base-white: #FFFFFF;
     --surface-brand-strong: #8C71F6;
@@ -220,6 +223,7 @@
 
 body {
   font-family: var(--font-inter);
+  background: var(--main-bg)
 }
 
 @layer utilities {

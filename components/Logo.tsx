@@ -15,7 +15,7 @@ export default function Logo(
         className="hidden dark:block"
         src="/images/logo/logo.svg"
         height={39}
-        width={176}
+        width={200}
         alt="LightchainAI Logo"
         priority
       />
