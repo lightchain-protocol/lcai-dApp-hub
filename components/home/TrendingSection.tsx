@@ -1,9 +1,9 @@
-import { DappCardMini } from "../dapp-card/DappCardMini"
-import { Button } from "../ui/Button"
+import { DappCardMini } from "../dapp-card/DappCardMini";
+import { Button } from "../ui/Button";
 
 const TrendingSection = () => {
   return (
-    <section className="py-20 border-y border-border-light">
+    <section className="px-4">
       <div className="container mx-auto">
         <div className="space-y-4 px-6 py-6 rounded-3xl bg-surface-base-extra-light">
           <div className="flex gap-4 items-center justify-between">
@@ -45,19 +45,19 @@ const TrendingSection = () => {
             <div className="flex gap-1.5 items-center">
               <Button
                 variant="primary"
-                size="xs"
+                size="sm"
               >
                 24H
               </Button>
               <Button
                 variant="outline"
-                size="xs"
+                size="sm"
               >
                 7D
               </Button>
               <Button
                 variant="outline"
-                size="xs"
+                size="sm"
               >
                 1M
               </Button>

@@ -17,8 +17,8 @@ const buttonVariants = cva(
       },
       size: {
         default: "type-body-m h-10 gap-2 px-4 font-medium",
-        xs: "type-body-s h-8 gap-1 px-3 font-medium",
-        sm: "type-body-s h-9 gap-1.5 px-4 font-medium",
+        sm: "type-body-s h-8 gap-1 px-3 font-medium",
+        md: "type-body-s h-11 gap-1.5 px-4 font-medium",
       },
     },
     defaultVariants: {
