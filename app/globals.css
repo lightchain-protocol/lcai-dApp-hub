@@ -207,11 +207,11 @@
     --surface-white-fixed: #FFFFFF;
 
     /* Border Colors */
-    --border-soft:rgb(204, 206, 239, 0.12);
-    --border-light: rgb(204, 206, 239, 0.08);
-    --border-extra-light: rgb(204, 206, 239, 0.06);
-    --border-faint: rgb(204, 206, 239, 0.04);
-    --border-medium: rgb(204, 206, 239, 0.4);
+    --border-soft:rgba(204, 206, 239, 0.12);
+    --border-light: rgba(204, 206, 239, 0.08);
+    --border-extra-light: rgba(204, 206, 239, 0.06);
+    --border-faint: rgba(204, 206, 239, 0.04);
+    --border-medium: rgba(204, 206, 239, 0.40);
     --border-brand: #7D52F4;
     --border-deep: #020203;
 
