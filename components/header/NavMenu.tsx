@@ -50,7 +50,7 @@ export default function Navbar({ menus }: { menus: MenuConfig[] }) {
             >
               <button
                 className={clsx(
-                  "flex h-20 items-center gap-1 px-3 text-base font-medium text-content-strong transition-colors duration-300 ease-in-out",
+                  "flex h-20 items-center gap-1 px-3 text-base font-medium text-content-strong lcai-transition",
                   open === idx ? "text-surface-brand-pink" : "hover:text-surface-brand-pink"
                 )}
                 aria-expanded={open === idx}
@@ -61,7 +61,7 @@ export default function Navbar({ menus }: { menus: MenuConfig[] }) {
 
               <div
                 className={clsx(
-                  "absolute top-[100%-10px] z-40 opacity-0 invisible transition-opacity duration-300 ease-in-out",
+                  "absolute top-[100%-10px] z-40 opacity-0 invisible lcai-transition",
                   align,
                   open === idx && "visible opacity-100"
                 )}

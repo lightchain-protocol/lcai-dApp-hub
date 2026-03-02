@@ -77,7 +77,7 @@ export default function Header(
               <Button
                 aria-expanded={isMenuActive}
                 aria-haspopup="dialog"
-                className="size-10 p-2.5 flex items-center justify-center rounded-full border border-border-medium bg-surface-base-subtle text-content-strong transition-all"
+                className="size-10 p-2.5 flex items-center justify-center rounded-full border border-border-medium bg-surface-base-subtle text-content-strong lcai-transition"
                 onClick={toggleMenu}
               >
                 <Menu size={24} />

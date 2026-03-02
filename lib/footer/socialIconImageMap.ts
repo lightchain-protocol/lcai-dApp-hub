@@ -1,5 +1,5 @@
 /** Maps iconKey → local SVG image path. Empty string = skip. */
-export const socialIconMap: Record<string, string> = {
+export const socialIconImageMap: Record<string, string> = {
   twitter: "/images/icons/x-icons-2.svg",
   discord: "/images/icons/discord-icon-svgrepo-com.svg",
   linktree: "/images/icons/linktree-icon.svg",
