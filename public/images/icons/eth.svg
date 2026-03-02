@@ -1,0 +1,19 @@
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ethereum (ETH)">
+<path id="Vector" d="M10.5 20.5C16.0228 20.5 20.5 16.0228 20.5 10.5C20.5 4.97715 16.0228 0.5 10.5 0.5C4.97715 0.5 0.5 4.97715 0.5 10.5C0.5 16.0228 4.97715 20.5 10.5 20.5Z" fill="url(#paint0_linear_26_4273)"/>
+<path id="Vector_2" d="M10.4989 13.2239L7.13892 11.2389L10.4989 15.9749L13.8619 11.2389L10.4989 13.2239Z" fill="white" fill-opacity="0.8"/>
+<path id="Vector_3" d="M13.8597 10.6018L10.4987 12.5878L7.1377 10.6018L10.4987 5.02478L13.8597 10.6018Z" fill="white" fill-opacity="0.8"/>
+<g id="Group">
+<path id="Vector_4" d="M13.86 10.602L10.499 9.07402V5.02502L13.86 10.602Z" fill="#C1CCF7"/>
+<path id="Vector_5" d="M13.862 11.2393L10.499 15.9753V13.2243L13.862 11.2393Z" fill="#C1CCF7"/>
+<path id="Vector_6" d="M10.4989 9.07373V12.5877L7.13892 10.6017L10.4989 9.07373Z" fill="#C1CCF7"/>
+</g>
+<path id="Vector_7" d="M13.8603 10.6022L10.4993 12.5882V9.07422L13.8603 10.6022Z" fill="#8198EE"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_26_4273" x1="10.5" y1="20.5" x2="10.5" y2="0.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3E5EBD"/>
+<stop offset="1" stop-color="#94AEFF"/>
+</linearGradient>
+</defs>
+</svg>

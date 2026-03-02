@@ -2,6 +2,7 @@
 
 @theme inline {
   /* Content Colors */
+  --color-content-secondary: var(--content-secondary);
   --color-content-ultra: var(--content-ultra);
   --color-content-strong: var(--content-strong);
   --color-content-bold: var(--content-bold);
@@ -29,7 +30,9 @@
   --color-content-white-fixed: var(--content-white-fixed);
 
   /* Surface Colors */
+  --color-surface-secondary: var(--surface-secondary);
   --color-surface-light: var(--surface-light);
+  --color-surface-extra-light: var(--surface-extra-light);
   --color-surface-faint: var(--surface-faint);
   --color-surface-base-ultra: var(--surface-base-ultra);
   --color-surface-base-strong: var(--surface-base-strong);
@@ -71,6 +74,7 @@
 
 :root {
   /* Content Colors */
+  --content-secondary: #DD00AC;
   --content-ultra: #020203;
   --content-strong: #22232A;
   --content-bold: #22232A;
@@ -98,8 +102,9 @@
   --content-white-fixed: #FFFFFF;
 
   /* Surface Colors */
+  --surface-secondary: #DD00AC;
   --surface-light: #FFFFFF;
-  --surface-light: #F0F0F0;
+  --surface-extra-light: #F0F0F0;
   --surface-faint: #FFFFFF;
   --surface-base-ultra: rgba(14, 18, 27, 0.48);
   --surface-base-strong: rgba(14, 18, 27, 0.40);
@@ -142,6 +147,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Content Colors */
+    --content-secondary: #DD00AC;
     --content-ultra: #FFFFFF;
     --content-strong: #CCCEEF;
     --content-bold: #B1B3D0;
@@ -169,8 +175,9 @@
     --content-white-fixed: #FFFFFF;
 
     /* Surface Colors */
+    --surface-secondary: #DD00AC;
     --surface-light: #22232A;
-    --surface-light: #0F0F14;
+    --surface-extra-light: #0F0F14;
     --surface-faint: #181822;
     --surface-base-ultra: rgba(204, 206, 239, 0.48);
     --surface-base-strong: rgba(204, 206, 239, 0.40);
@@ -213,4 +220,20 @@
 
 body {
   font-family: var(--font-inter);
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-[1320px];
+  }
+}
+
+/* link hover underline effect */
+.lcai-link-hover {
+  @apply relative hover:text-content-brand-light after:content-[''] after:absolute after:bottom-0 after:left-auto after:right-0 hover:after:right-auto hover:after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-surface-brand-default transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out;
+}
+
+/* global transition effect */
+.lcai-transition {
+  @apply transition-all duration-300 ease-in-out;
 }
