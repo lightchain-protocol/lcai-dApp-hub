@@ -1,9 +1,9 @@
 "use client";
 
+import clsx from "clsx";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
-import clsx from "clsx";
 import { Badge } from "../ui/Badge";
 
 type DappCardMiniProps = {
@@ -39,11 +39,12 @@ export function DappCardMini({
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-start gap-4 md:gap-6">
             {/* Logo circle */}
-            <div className="relative inline-flex h-16 w-16 shrink-0 bg-surface-base-light rounded-full items-center justify-center">
+            <div className="relative inline-flex h-14 md:h-16 w-14 md:w-16 shrink-0 bg-surface-base-light rounded-full items-center justify-center">
               <Image
                 src={iconSrc}
                 alt={name}
                 fill
+                sizes="(min-width: 768px) 4rem, 3.5rem"
                 className="rounded-full"
               />
             </div>
