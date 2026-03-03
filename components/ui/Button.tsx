@@ -4,16 +4,17 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "group/button inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-[10px] outline-none transition-all focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "group/button inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-[10px] outline-none transition-all disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-surface-brand-default text-content-ultra hover:opacity-90",
-        primary: "bg-surface-brand-default text-content-ultra hover:opacity-90",
+        default: "bg-surface-primary text-content-ultra hover:bg-surface-brand-default hover:text-content-white-fixed",
+        primary: "bg-surface-primary text-content-ultra hover:bg-surface-brand-default hover:text-content-white-fixed",
         outline: "bg-surface-base-strong text-content-strong border-2 border-border-soft hover:opacity-90",
         gradient:
-          "bg-linear-to-r from-surface-secondary to-surface-brand-default text-white hover:from-[#9333ea] hover:to-[#3b82f6]",
+          "bg-linear-to-r from-surface-secondary to-surface-primary text-white hover:from-[#9333ea] hover:to-[#3b82f6]",
         secondary: "bg-surface-secondary text-white hover:opacity-90",
+        ghost: "bg-surface-base-light border-2 border-border-light text-content-soft hover:opacity-90 hover:text-content-bold active:text-white lcai-transition",
       },
       size: {
         default: "type-body-m h-10 gap-2 px-4 font-medium",
