@@ -257,6 +257,35 @@ body {
     @apply text-content-ultra leading-relaxed;
   }
 
+  .lcai-content h1,
+  .lcai-content h2,
+  .lcai-content h3,
+  .lcai-content h4,
+  .lcai-content h5,
+  .lcai-content h6 {
+    @apply font-semibold leading-[1.2] tracking-[-0.56px] text-content-ultra;
+  }
+
+  .lcai-content h1 {
+    @apply mb-6 text-[32px] md:text-4xl lg:text-[42px];
+  }
+
+  .lcai-content h2 {
+    @apply mb-6 text-[28px] md:text-4xl;
+  }
+
+  .lcai-content h3 {
+    @apply mb-4 text-[24px] md:text-[32px];
+  }
+
+  .lcai-content h4 {
+    @apply mb-4 text-[22px] md:text-[28px];
+  }
+
+  .lcai-content h5 {
+    @apply mb-4 text-[20px] md:text-[25px];
+  }
+
   .lcai-content p {
     @apply mb-4 text-content-ultra text-base md:text-lg font-normal leading-[1.7] tracking-[-0.18px];
   }

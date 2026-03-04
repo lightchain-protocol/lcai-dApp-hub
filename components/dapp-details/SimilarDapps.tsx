@@ -31,7 +31,6 @@ const SimilarDapps = () => {
         }}
         modules={[Navigation]}
         onSwiper={handleSwiper}
-        className="border"
       >
         {trendingDapps?.map((dapp, idx) => (
           <SwiperSlide key={dapp?.id} className={`max-w-[426px] ${idx === trendingDapps.length - 1 ? 'mr-0' : 'mr-5'}`}>
