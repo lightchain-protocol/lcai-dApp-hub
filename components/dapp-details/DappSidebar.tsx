@@ -1,13 +1,15 @@
-import { ArrowLeft, CircleFadingPlus, ExternalLink, Flag, Globe, Hash, Link, RefreshCcw } from "lucide-react";
+import { ArrowLeft, CircleFadingPlus, ExternalLink, Globe, Hash, RefreshCcw } from "lucide-react";
 import Image from "next/image";
-import CopyButton from "../CopyButton";
-import { Button } from "../ui/Button";
+import CopyButton from "@/components/CopyButton";
+import ReportDialog from "@/components/ReportDialog";
+import ShareDialog from "@/components/ShareDialog";
+import { Button } from "@/components/ui/Button";
 
 const DappSidebar = () => {
   const projectID = "52591";
 
   return (
-    <div className="max-w-102.5 w-full bg-surface-base-faint rounded-2xl">
+    <div className="max-w-102.5 w-full bg-surface-base-faint rounded-2xl sticky lg:top-26">
       {/* Back Button */}
       <div className="border-b border-border-soft">
         <button className="p-4 flex gap-3 items-center text-base font-medium leading-none tracking-[-0.4px] text-content-strong cursor-pointer hover:text-content-ultra lcai-transition">
@@ -15,7 +17,6 @@ const DappSidebar = () => {
           BACK
         </button>
       </div>
-
 
       <div className="divide-y divide-border-soft">
         <div className="px-4 md:px-6 py-4 md:py-6">
@@ -94,7 +95,11 @@ const DappSidebar = () => {
 
           {/* <!-- Icon Buttons --> */}
           <div className="grid grid-cols-3 gap-2 md:gap-4">
-            <button className="px-3 md:px-5 py-1.5 md:py-3 rounded-lg md:rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
+            <Button
+              variant={"ghost"}
+              size={"md"}
+              className={"text-content-brand-light hover:text-content-brand-light"}
+            >
               <span className="flex items-center justify-center w-6 md:w-7 h-6 md:h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,8 +114,12 @@ const DappSidebar = () => {
                   />
                 </svg>
               </span>
-            </button>
-            <button className="px-3 md:px-5 py-1.5 md:py-3 rounded-lg md:rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
+            </Button>
+            <Button
+              variant={"ghost"}
+              size={"md"}
+              className={"text-content-brand-light hover:text-content-brand-light"}
+            >
               <span className="flex items-center justify-center w-6 md:w-7 h-6 md:h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,8 +136,12 @@ const DappSidebar = () => {
                   />
                 </svg>
               </span>
-            </button>
-            <button className="px-3 md:px-5 py-1.5 md:py-3 rounded-lg md:rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
+            </Button>
+            <Button
+              variant={"ghost"}
+              size={"md"}
+              className={"text-content-brand-light hover:text-content-brand-light"}
+            >
               <span className="flex items-center justify-center w-6 md:w-7 h-6 md:h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,31 +156,17 @@ const DappSidebar = () => {
                   />
                 </svg>
               </span>
-            </button>
+            </Button>
           </div>
-
         </div>
 
         {/* <!-- Bottom Actions --> */}
         <div className="px-4 md:px-6 py-4 md:py-6">
           <div className="grid grid-cols-2 gap-4">
-            <Button
-              variant={"ghost"}
-              size={"md"}
-            >
-              <Link />
-              SHARE
-            </Button>
-            <Button
-              variant={"ghost"}
-              size={"md"}
-            >
-              <Flag />
-              REPORT
-            </Button>
+            <ShareDialog />
+            <ReportDialog />
           </div>
         </div>
-
       </div>
     </div>
   )

@@ -2,8 +2,8 @@
 'use client';
 
 import { Search } from "lucide-react";
-import { Button } from "../ui/Button";
-import { Input } from "../ui/Input";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
 
 const HeroSearchField = () => {
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,7 +24,7 @@ const HeroSearchField = () => {
             type="text"
             name="search"
             size={"lg"}
-            className="pl-11 pr-26"
+            className="pl-11 pr-26 h-12 md:h-14"
             placeholder="Search dApps, protocols, tools..."
           />
           <Button

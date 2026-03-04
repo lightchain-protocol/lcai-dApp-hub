@@ -3,11 +3,11 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import SwiperNavButton from "../ui/SwiperNavButton";
+import SwiperNavButton from "@/components/ui/SwiperNavButton";
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import { useSwiperEdgeState } from "@/hooks/useSwiperEdgeState";
-import { DappCardMini } from "../dapp-card/DappCardMini";
+import { DappCardMini } from "@/components/dapp-card/DappCardMini";
 
 const SimilarDapps = () => {
   // const { isBeginning, isEnd, handleSwiper } = useSwiperEdgeState();
