@@ -19,6 +19,7 @@
     "react-dom": "19.2.3",
     "slugify": "^1.6.6",
     "sonner": "^2.0.7",
+    "swiper": "^12.1.2",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {

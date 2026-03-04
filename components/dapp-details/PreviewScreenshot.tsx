@@ -39,18 +39,18 @@ const PreviewScreenshot = () => {
       </div>
 
       {/* Tabs */}
-      <TabsList className={"mt-6 gap-4"}>
+      <TabsList className={"mt-3 md:mt-6 gap-2 md:gap-4"}>
         <TabsTrigger
           value="dapp-screenshot-1"
           className={"p-0"}
         >
           <span className="space-y-1 5">
-            <span className="block relative aspect-video max-w-32 w-32 rounded overflow-hidden">
+            <span className="block relative aspect-video max-w-32 w-16 md:w-32 rounded overflow-hidden">
               <Image
                 src={"/images/details-content-image/dapp-site-screenshot-1.png"}
                 alt="Dapp Screenshot"
                 fill
-                sizes="128px"
+                sizes="(min-width: 1024px) 128px, 48vw"
               />
             </span>
             <span className="block text-xs leading-[1.2] tracking-[-0.12px] text-start">Swap</span>
@@ -61,12 +61,12 @@ const PreviewScreenshot = () => {
           className={"p-0"}
         >
           <span className="space-y-1 5">
-            <span className="block relative aspect-video max-w-32 w-32 rounded overflow-hidden">
+            <span className="block relative aspect-video max-w-32 w-16 md:w-32 rounded overflow-hidden">
               <Image
                 src={"/images/details-content-image/dapp-site-screenshot-2.png"}
                 alt="Dapp Screenshot"
                 fill
-                sizes="128px"
+                sizes="(min-width: 1024px) 128px, 48vw"
               />
             </span>
             <span className="block text-xs leading-[1.2] tracking-[-0.12px] text-start">Limit Order</span>
@@ -77,12 +77,12 @@ const PreviewScreenshot = () => {
           className={"p-0"}
         >
           <span className="space-y-1 5">
-            <span className="block relative aspect-video max-w-32 w-32 rounded overflow-hidden">
+            <span className="block relative aspect-video max-w-32 w-16 md:w-32 rounded overflow-hidden">
               <Image
                 src={"/images/details-content-image/dapp-site-screenshot-3.png"}
                 alt="Dapp Screenshot"
                 fill
-                sizes="128px"
+                sizes="(min-width: 1024px) 128px, 48vw"
               />
             </span>
             <span className="block text-xs leading-[1.2] tracking-[-0.12px] text-start">Earn</span>

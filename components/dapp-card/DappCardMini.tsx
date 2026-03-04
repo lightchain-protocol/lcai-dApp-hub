@@ -33,7 +33,7 @@ export function DappCardMini({
         className={clsx(
           "flex h-full flex-col justify-between rounded-2xl border border-border-soft",
           "bg-surface-base-extra-light",
-          "px-4 md:px-6 py-4 md:py-6 lcai-transition hover:bg-surface-base-light"
+          "px-4 md:px-6 py-4 md:py-6 lcai-transition hover:bg-surface-base-soft"
         )}
       >
         {/* Top row: icon + title + external link */}

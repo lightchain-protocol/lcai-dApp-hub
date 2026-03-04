@@ -18,9 +18,9 @@ const DappSidebar = () => {
 
 
       <div className="divide-y divide-border-soft">
-        <div className="px-6 py-6">
+        <div className="px-4 md:px-6 py-4 md:py-6">
           <div
-            className="relative h-14 md:h-20 w-14 md:w-20 inline-flex items-center justify-center rounded-full bg-surface-base-dark mb-5"
+            className="relative h-14 md:h-20 w-14 md:w-20 inline-flex items-center justify-center rounded-full bg-surface-base-dark mb-2 md:mb-5"
           >
             <Image
               src={"/images/dapp-item-logo/dapp-logo-icon-05.png"}
@@ -31,13 +31,13 @@ const DappSidebar = () => {
             />
           </div>
 
-          <h1 className="text-4xl font-semibold leading-[1.2] tracking-[-0.36px] text-content-ultra mb-0.5">KyberSwap</h1>
-          <p className="text-lg leading-[1.7] tracking-[-0.18px] text-content-bold">Your Finance, Your Freedom</p>
+          <h1 className="text-2xl md:text-4xl font-semibold leading-[1.2] tracking-[-0.36px] text-content-ultra mb-0.5">KyberSwap</h1>
+          <p className="text-base md:text-lg leading-[1.7] tracking-[-0.18px] text-content-bold">Your Finance, Your Freedom</p>
 
           <Button
             variant={"gradient"}
             size={"md"}
-            className={"w-full mt-6"}
+            className={"w-full mt-4 md:mt-6"}
           >
             OPEN DAPP
             <ExternalLink className="size-5" />
@@ -45,7 +45,7 @@ const DappSidebar = () => {
         </div>
 
         {/* <!-- Info Section --> */}
-        <div className="space-y-5 px-6 py-6">
+        <div className="space-y-3 md:space-y-5 px-4 md:px-6 py-4 md:py-6">
 
           <div className="flex items-center gap-3 text-sm">
             <div className="w-10 h-10 rounded-full bg-surface-base-extra-light text-content-brand-light p-2 flex items-center justify-center">
@@ -93,9 +93,9 @@ const DappSidebar = () => {
           </div>
 
           {/* <!-- Icon Buttons --> */}
-          <div className="grid grid-cols-3 gap-4">
-            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
-              <span className="flex items-center justify-center w-7 h-7">
+          <div className="grid grid-cols-3 gap-2 md:gap-4">
+            <button className="px-3 md:px-5 py-1.5 md:py-3 rounded-lg md:rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
+              <span className="flex items-center justify-center w-6 md:w-7 h-6 md:h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={21}
@@ -110,8 +110,8 @@ const DappSidebar = () => {
                 </svg>
               </span>
             </button>
-            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
-              <span className="flex items-center justify-center w-7 h-7">
+            <button className="px-3 md:px-5 py-1.5 md:py-3 rounded-lg md:rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
+              <span className="flex items-center justify-center w-6 md:w-7 h-6 md:h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={28}
@@ -128,8 +128,8 @@ const DappSidebar = () => {
                 </svg>
               </span>
             </button>
-            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
-              <span className="flex items-center justify-center w-7 h-7">
+            <button className="px-3 md:px-5 py-1.5 md:py-3 rounded-lg md:rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
+              <span className="flex items-center justify-center w-6 md:w-7 h-6 md:h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={21}
@@ -149,7 +149,7 @@ const DappSidebar = () => {
         </div>
 
         {/* <!-- Bottom Actions --> */}
-        <div className="px-6 py-6">
+        <div className="px-4 md:px-6 py-4 md:py-6">
           <div className="grid grid-cols-2 gap-4">
             <Button
               variant={"ghost"}

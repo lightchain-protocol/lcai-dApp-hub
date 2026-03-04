@@ -258,7 +258,7 @@ body {
   }
 
   .lcai-content p {
-    @apply mb-4 text-content-ultra text-lg font-normal leading-[1.7] tracking-[-0.18px];
+    @apply mb-4 text-content-ultra text-base md:text-lg font-normal leading-[1.7] tracking-[-0.18px];
   }
 
   .lcai-content ul {
@@ -266,7 +266,7 @@ body {
   }
 
   .lcai-content ul li {
-    @apply text-lg font-normal leading-[1.7] tracking-[-0.18px] text-content-ultra;
+    @apply text-base md:text-lg font-normal leading-[1.7] tracking-[-0.18px] text-content-ultra;
   }
 
   .lcai-content a {
