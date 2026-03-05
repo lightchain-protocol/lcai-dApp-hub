@@ -47,6 +47,7 @@ export function DappCardMini({
                 fill
                 sizes="(min-width: 768px) 4rem, 3.5rem"
                 className="rounded-full"
+                unoptimized
               />
             </div>
 

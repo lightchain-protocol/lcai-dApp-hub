@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   /* Content Colors */
@@ -230,6 +231,42 @@
   }
 }
 
+/* Dynamic Content Style */
+@utility prose-dapp {
+  --tw-prose-body: var(--color-content-bold);
+  --tw-prose-headings: var(--color-content-strong);
+  --tw-prose-lead: var(--color-pink-700);
+  --tw-prose-links: var(--color-content-primary);
+  --tw-prose-bold: var(--color-content-bold);
+  --tw-prose-counters: var(--color-content-strong);
+  --tw-prose-bullets: var(--color-content-bold);
+  --tw-prose-hr: var(--color-border-soft);
+  --tw-prose-quotes: var(--color-content-strong);
+  --tw-prose-quote-borders: var(--color-border-soft);
+  --tw-prose-captions: var(--color-content-strong);
+  --tw-prose-code: var(--color-content-ultra);
+  --tw-prose-pre-code: var(--color-content-strong);
+  --tw-prose-pre-bg: var(--color-surface-light);
+  --tw-prose-th-borders: var(--color-border-soft);
+  --tw-prose-td-borders: var(--color-border-soft);
+  --tw-prose-invert-body: var(--color-content-white-fixed);
+  --tw-prose-invert-headings: var(--color-white);
+  --tw-prose-invert-lead: var(--color-pink-300);
+  --tw-prose-invert-links: var(--color-content-primary);
+  --tw-prose-invert-bold: var(--color-content-white-fixed);
+  --tw-prose-invert-counters: var(--color-content-strong);
+  --tw-prose-invert-bullets: var(--color-content-bold);
+  --tw-prose-invert-hr: var(--color-border-soft);
+  --tw-prose-invert-quotes: var(--color-content-strong);
+  --tw-prose-invert-quote-borders: var(--color-border-soft);
+  --tw-prose-invert-captions: var(--color-content-strong);
+  --tw-prose-invert-code: var(--color-content-ultra);
+  --tw-prose-invert-pre-code: var(--color-content-ultra);
+  --tw-prose-invert-pre-bg: var(--color-surface-light);
+  --tw-prose-invert-th-borders: var(--color-border-soft);
+  --tw-prose-invert-td-borders: var(--color-border-soft);
+}
+
 body {
   font-family: var(--font-inter);
   background: var(--main-bg);
@@ -249,60 +286,4 @@ body {
 /* global transition effect */
 .lcai-transition {
   @apply transition-all duration-300 ease-in-out;
-}
-
-/* Dynamic Content Style */
-@layer components {
-  .lcai-content {
-    @apply text-content-ultra leading-relaxed;
-  }
-
-  .lcai-content h1,
-  .lcai-content h2,
-  .lcai-content h3,
-  .lcai-content h4,
-  .lcai-content h5,
-  .lcai-content h6 {
-    @apply font-semibold leading-[1.2] tracking-[-0.56px] text-content-ultra;
-  }
-
-  .lcai-content h1 {
-    @apply mb-6 text-[32px] md:text-4xl lg:text-[42px];
-  }
-
-  .lcai-content h2 {
-    @apply mb-6 text-[28px] md:text-4xl;
-  }
-
-  .lcai-content h3 {
-    @apply mb-4 text-[24px] md:text-[32px];
-  }
-
-  .lcai-content h4 {
-    @apply mb-4 text-[22px] md:text-[28px];
-  }
-
-  .lcai-content h5 {
-    @apply mb-4 text-[20px] md:text-[25px];
-  }
-
-  .lcai-content p {
-    @apply mb-4 text-content-ultra text-base md:text-lg font-normal leading-[1.7] tracking-[-0.18px];
-  }
-
-  .lcai-content ul {
-    @apply list-disc pl-6 mb-4;
-  }
-
-  .lcai-content ul li {
-    @apply text-base md:text-lg font-normal leading-[1.7] tracking-[-0.18px] text-content-ultra;
-  }
-
-  .lcai-content a {
-    @apply text-content-primary border-b border-dashed border-border-primary hover:border-solid;
-  }
-
-  .lcai-content strong {
-    @apply font-semibold;
-  }
 }

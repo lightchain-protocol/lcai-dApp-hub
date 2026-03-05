@@ -42,7 +42,7 @@ const dappResults: DappCardProps[] = [
     description:
       "The world's largest onchain marketplace, trusted by millions. Buy and sell crypto on Ethereum, Monad and 14+ other chains.",
     tags: ["TRADING", "NEW"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-01.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-07.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-01.png",
   },
   {
@@ -51,7 +51,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Onchain arcade and social casino with skill-based games and creator leagues powered by crypto.",
     tags: ["GAMING", "HOT"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-02.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-08.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-02.png",
   },
   {
@@ -60,7 +60,7 @@ const dappResults: DappCardProps[] = [
     description:
       "High-frequency perp DEX bringing pro trading tools and deep liquidity to the Monad ecosystem.",
     tags: ["TRADING"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-03.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-09.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-03.png",
   },
   {
@@ -69,7 +69,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Immersive onchain world with composable avatars, quests, and NFT-gated experiences.",
     tags: ["GAMING", "NFT"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-04.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-10.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-04.png",
   },
   {
@@ -78,7 +78,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Best-rate DEX aggregator that splits orders across multiple venues for optimal pricing.",
     tags: ["TRADING", "AGGREGATOR"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-05.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-11.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-05.png",
   },
   {
@@ -87,7 +87,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Cross-chain swap router to move liquidity between Ethereum, Monad, and 10+ other L2s in seconds.",
     tags: ["BRIDGE", "CROSS-CHAIN"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-06.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-12.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-06.png",
   },
   {
@@ -96,7 +96,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Smart vaults that auto-compound and rebalance yield strategies across leading Monad protocols.",
     tags: ["YIELD"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-01.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-13.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-07.png",
   },
   {
@@ -105,7 +105,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Onchain questing platform for discovering new dApps, completing tasks, and earning rewards.",
     tags: ["DISCOVERY", "REWARDS"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-02.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-14.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-08.png",
   },
   {
@@ -114,7 +114,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Human-readable names and identity layer for wallets, dApps, and communities on Monad.",
     tags: ["IDENTITY"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-03.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-15.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-09.png",
   },
   {
@@ -123,7 +123,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Smart vaults that auto-compound and rebalance yield strategies across leading Monad protocols.",
     tags: ["YIELD"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-04.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-16.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-01.png",
   },
   {
@@ -132,7 +132,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Onchain questing platform for discovering new dApps, completing tasks, and earning rewards.",
     tags: ["DISCOVERY", "REWARDS"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-05.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-17.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-02.png",
   },
   {
@@ -141,7 +141,7 @@ const dappResults: DappCardProps[] = [
     description:
       "Human-readable names and identity layer for wallets, dApps, and communities on Monad.",
     tags: ["IDENTITY"],
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-06.png",
+    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-18.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-03.png",
   },
 ];
