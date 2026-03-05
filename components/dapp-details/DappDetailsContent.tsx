@@ -6,8 +6,7 @@ const DappDetailsContent = () => {
   return (
     <div className="grow h-full space-y-8">
       <PreviewScreenshot />
-
-      <div className="lcai-content">
+      <article className="prose prose-lg prose-dapp">
         <p>KyberSwap is a cutting-edge decentralized trading platform that empowers users to find the most advantageous token swap rates. Here’s what makes KyberSwap stand out:</p>
         <ul>
           <li>Intelligent Trade Routing</li>
@@ -19,7 +18,7 @@ const DappDetailsContent = () => {
           <li><strong>Community Driven:</strong> KyberSwap thrives on community feedback, continuously evolving to meet user needs.</li>
           <li><strong>Liquidity Incentives:</strong> Users can earn rewards by providing liquidity, making it a win-win situation.</li>
         </ul>
-      </div>
+      </article>
 
       {/* Tags */}
       <div className="flex gap-4 items-center">

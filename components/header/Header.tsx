@@ -11,7 +11,6 @@ import Logo from "../Logo";
 import { Button } from "../ui/Button";
 import ConnectWalletButton from "../ui/ConnectWalletButton";
 import UserButton from "../ui/UserButton";
-import ThemeToggleButton from "./DarkSwitcher";
 import Navbar from "./NavMenu";
 import PopupMobileMenu from "./PopupMobileMenu";
 import type { MenuConfig, NavCardItem } from "./types";
@@ -68,7 +67,7 @@ export default function Header(
 
           {/* Right: Actions */}
           <div className="flex items-center gap-2 xl:gap-4">
-            <ThemeToggleButton />
+            {/* <ThemeToggleButton /> */}
             <UserButton className="hidden md:flex" />
             <ConnectWalletButton className="hidden md:flex" />
 

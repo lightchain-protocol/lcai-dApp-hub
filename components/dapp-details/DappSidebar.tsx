@@ -4,6 +4,7 @@ import CopyButton from "@/components/CopyButton";
 import ReportDialog from "@/components/ReportDialog";
 import ShareDialog from "@/components/ShareDialog";
 import { Button } from "@/components/ui/Button";
+import { Link } from "@/components/Link";
 
 const DappSidebar = () => {
   const projectID = "52591";
@@ -35,14 +36,14 @@ const DappSidebar = () => {
           <h1 className="text-2xl md:text-4xl font-semibold leading-[1.2] tracking-[-0.36px] text-content-ultra mb-0.5">KyberSwap</h1>
           <p className="text-base md:text-lg leading-[1.7] tracking-[-0.18px] text-content-bold">Your Finance, Your Freedom</p>
 
-          <Button
-            variant={"gradient"}
-            size={"md"}
-            className={"w-full mt-4 md:mt-6"}
+          <Link
+            href={"https://kyberswap.com/"} // TODO: replace with the real site link
+            target="_blank"
+            className={"group/button inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-[10px] outline-none transition-all disabled:pointer-events-none disabled:opacity-50 bg-linear-to-r from-surface-secondary to-surface-primary text-white hover:from-[#9333ea] hover:to-[#3b82f6] type-body-s h-9 md:h-11 gap-1.5 px-4 md:font-medium w-full mt-4 md:mt-6"}
           >
             OPEN DAPP
             <ExternalLink className="size-5" />
-          </Button>
+          </Link>
         </div>
 
         {/* <!-- Info Section --> */}
@@ -54,7 +55,7 @@ const DappSidebar = () => {
             </div>
             <div className="space-y-0.5">
               <p className="text-xs leading-[1.2] tracking-[-0.12px] text-content-bold">Website</p>
-              <p className="text-base font-medium leading-normal tracking-[-0.16px] text-content-brand-light break-all">https://kyberswap.com/swap/monad</p>
+              <Link href={"https://kyberswap.com/swap/monad"} target="_blank" className="text-base font-medium leading-normal tracking-[-0.16px] text-content-brand-light break-all">https://kyberswap.com/swap/monad</Link>
             </div>
           </div>
 

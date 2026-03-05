@@ -12,7 +12,7 @@ const ReportDialog = () => {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger>
         <span
-          className="group/button inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-[10px] outline-none transition-all disabled:pointer-events-none disabled:opacity-50 bg-surface-base-light hover:bg-surface-base-soft border-2 border-border-light text-content-soft hover:opacity-90 hover:text-content-bold active:text-white type-body-s h-9 md:h-11 gap-1.5 px-4 md:font-medium lcai-transition w-full"
+          className="group/button inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-[10px] outline-none transition-all disabled:pointer-events-none disabled:opacity-50 bg-surface-base-light hover:bg-surface-base-soft border-2 border-border-light text-content-ultra hover:opacity-90 hover:text-content-bold active:text-white type-body-s h-9 md:h-11 gap-1.5 px-4 md:font-medium lcai-transition w-full"
         >
           <Flag />
           REPORT
