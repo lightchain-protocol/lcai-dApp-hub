@@ -97,6 +97,7 @@ const DappSidebar = () => {
           {/* <!-- Icon Buttons --> */}
           <div className="grid grid-cols-3 gap-2 md:gap-4">
             <Button
+              href="#" // TODO: replace with actual docs link url for the dApp
               variant={"ghost"}
               size={"md"}
               className={"text-content-brand-light hover:text-content-brand-light"}
@@ -117,6 +118,7 @@ const DappSidebar = () => {
               </span>
             </Button>
             <Button
+              href="#"  // TODO: replace with actual link url for the dApp
               variant={"ghost"}
               size={"md"}
               className={"text-content-brand-light hover:text-content-brand-light"}
@@ -139,6 +141,7 @@ const DappSidebar = () => {
               </span>
             </Button>
             <Button
+              href="#"  // TODO: replace with actual link url for the dApp
               variant={"ghost"}
               size={"md"}
               className={"text-content-brand-light hover:text-content-brand-light"}
