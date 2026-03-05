@@ -16,6 +16,15 @@ const interFont = Inter({
 export const metadata: Metadata = {
   title: "Lightchain dApp",
   description: "Lightchain dApp Hub",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/manifest.json",
 };
 
 export default async function RootLayout({
