@@ -1,10 +1,11 @@
-import { ArrowLeft, CircleFadingPlus, ExternalLink, Globe, Hash, RefreshCcw } from "lucide-react";
-import Image from "next/image";
 import CopyButton from "@/components/CopyButton";
+import { Link } from "@/components/Link";
 import ReportDialog from "@/components/ReportDialog";
 import ShareDialog from "@/components/ShareDialog";
 import { Button } from "@/components/ui/Button";
-import { Link } from "@/components/Link";
+import { CircleFadingPlus, ExternalLink, Globe, Hash, RefreshCcw } from "lucide-react";
+import Image from "next/image";
+import BackButton from "./BackButton";
 
 const DappSidebar = () => {
   const projectID = "52591";
@@ -13,10 +14,7 @@ const DappSidebar = () => {
     <div className="max-w-102.5 w-full bg-surface-base-faint rounded-2xl sticky lg:top-26">
       {/* Back Button */}
       <div className="border-b border-border-soft">
-        <button className="p-4 flex gap-3 items-center text-base font-medium leading-none tracking-[-0.4px] text-content-strong cursor-pointer hover:text-content-ultra lcai-transition">
-          <ArrowLeft className="size-5" />
-          BACK
-        </button>
+        <BackButton />
       </div>
 
       <div className="divide-y divide-border-soft">
