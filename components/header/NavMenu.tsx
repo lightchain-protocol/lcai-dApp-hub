@@ -50,7 +50,7 @@ export default function Navbar({ menus }: { menus: MenuConfig[] }) {
             >
               <button
                 className={clsx(
-                  "flex h-20 items-center gap-1 px-3 text-base font-medium text-content-strong lcai-transition",
+                  "flex h-16 items-center gap-1 px-3 text-sm font-semibold text-content-strong lcai-transition",
                   open === idx ? "text-surface-brand-pink" : "hover:text-surface-brand-pink"
                 )}
                 aria-expanded={open === idx}

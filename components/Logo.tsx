@@ -20,10 +20,10 @@ export default function Logo(
         priority
       />
       <Image
-        className="dark:hidden"
+        className="block dark:hidden"
         src="/images/logo/logo-dark.svg"
         height={39}
-        width={176}
+        width={196}
         alt="LightchainAI Logo"
         priority
       />

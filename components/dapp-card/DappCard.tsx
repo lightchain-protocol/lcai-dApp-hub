@@ -30,8 +30,8 @@ export function DappCard({
     >
       <div
         className={clsx(
-          "relative flex h-full flex-col overflow-hidden rounded-2xl",
-          "bg-surface-base-extra-light lcai-transition hover:bg-surface-base-light"
+          "relative flex h-full flex-col overflow-hidden",
+          "bg-surface-base-extra-light backdrop-blur-sm lcai-transition hover:bg-surface-base-light"
         )}
       >
         {/* Top media section */}
