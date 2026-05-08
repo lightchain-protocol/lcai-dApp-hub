@@ -1,8 +1,9 @@
 import { socialIconImageMap } from "@/lib/footer/socialIconImageMap";
 import type { RawFooterColumn, RawSocialLink } from "@/lib/footer/types";
 import Image from "next/image";
-import Logo from "../Logo";
 import { Link } from "../Link";
+import TextPressure from "../ui/TextPressure";
+import PixelBlast from "../ui/PixelBlast";
 
 type FooterProps = {
   socials: RawSocialLink[];
@@ -12,7 +13,7 @@ type FooterProps = {
 export default async function Footer({ socials, footerColumns }: FooterProps) {
 
   return (
-    <footer className="relative border-border-soft border-t bg-surface-slate-strong px-6 md:px-14 py-25 bg-[url(/images/bg/footer-bg.png)] bg-no-repeat bg-cover after:content-[''] after:absolute after:w-full after:h-full after:bg-[linear-gradient(0deg,rgba(8,8,18,0.40)_0%,#101123_100%)] after:top-1/2 after:left-1/2 after:-translate-1/2 ">
+    <footer className="relative border-border-soft border-t bg-surface-slate-strong px-6 md:px-14 pt-20">
       <div className="container mx-auto z-1 relative">
         <div className="grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pb-12">
           {footerColumns.map((col) => (
@@ -62,13 +63,50 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between gap-6 border-border-soft border-t py-8 text-center md:flex-row md:gap-4 md:py-4 md:text-left">
-          <Logo />
+        <div className="flex flex-col items-center justify-between gap-6 border-border-soft border-t py-8 text-center">
           <div className="flex items-center gap-5 text-content-bold">
             <p>Copyright © 2026 <Link href="/" className="text-content-strong lcai-link-hover">Lightchain Protocol</Link></p>
           </div>
         </div>
       </div>
-    </footer>
+
+      <div className="relative footer-bottom">
+        <div className="relative h-[300px] text-pressure-container">
+          <TextPressure
+            text="Lightchain"
+            flex={false}
+            alpha={false}
+            stroke={false}
+            width
+            weight={false}
+            italic={false}
+            textColor="transparent"
+            strokeColor="#f5f3ff"
+            minFontSize={36}
+            maxFontSize={300}
+            letterSpacing={20}
+            classNameTextPressure="flex justify-center items-center footer-gradient-text"
+          />
+        </div>
+
+        <div className="absolute top-0 left-0 w-full h-full z-[-1]">
+          <PixelBlast
+            variant="square"
+            pixelSize={2}
+            color="#a552f3"
+            patternScale={3.5}
+            patternDensity={0.2}
+            enableRipples={false}
+            rippleSpeed={0.3}
+            rippleThickness={0.1}
+            rippleIntensityScale={0.7}
+            speed={0.35}
+            transparent={false}
+            edgeFade={0.12}
+
+          />
+        </div>
+      </div>
+    </footer >
   );
 }
