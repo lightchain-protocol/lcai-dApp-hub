@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { generateSlugWithId } from "@/lib/utils";
 
-type DappCardMiniProps = {
+export type DappCardMiniProps = {
   id: string | number;
   name: string;
   description: string;

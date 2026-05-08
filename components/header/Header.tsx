@@ -48,32 +48,27 @@ export default function Header(
 
   return (
     <>
-      {/* Header Topbar */}
-      <div className="py-1.5 md:py-2 bg-[url(/images/bg/topbar-bg.png)] bg-no-repeat bg-cover">
+      <div className="py-1.5 md:py-2 bg-[url(/images/bg/topbar-bg-light.png)] dark:bg-[url(/images/bg/topbar-bg.png)] bg-no-repeat bg-cover">
         <div className="px-4">
-          <p className="text-center text-[#7376AA] text-xs md:text-sm font-medium leading-none">
-            🏟️ BUIDL where legends play. Join our LightchainAI at Parc des Princes, Paris – July 2025 •
-            <Link href={"#"} className="bg-[linear-gradient(89deg,#ff12fb_-50%,#e3c1f3_70%,#7064e9_102%)] bg-clip-text text-transparent ml-1">Register Now →</Link>
+          <p className="text-center dark:text-[#B1B3D0] text-content-soft text-xs md:text-sm font-medium leading-none">
+            We&apos;re no longer active on Telegram. Join our official Discord for real-time updates and community chat:
+            <Link href={"#"} className="ml-1 text-content-strong underline decoration-border-medium underline-offset-2">discord.gg/lightchain</Link>
           </p>
         </div>
       </div>
       <header className="sticky top-0 z-50 w-full border-b border-border-soft bg-surface-base-dark backdrop-blur-md dark:border-[rgba(204,206,239,0.12)] dark:bg-surface-dark-fixed/80">
         <div className="flex h-14 items-center justify-between px-4 md:h-16 md:px-12.5">
-          {/* Left: Logo */}
           <Logo />
 
-          {/* Center: Navigation (Desktop only) */}
           <div className="hidden xl:block">
             <Navbar menus={menus} />
           </div>
 
-          {/* Right: Actions */}
           <div className="flex items-center gap-2 xl:gap-4">
             <ThemeToggleButton />
             <UserButton className="hidden md:flex" />
             <ConnectWalletButton className="hidden md:flex" />
 
-            {/* Mobile Menu Toggle */}
             <div className="block xl:hidden">
               <Button
                 aria-expanded={isMenuActive}

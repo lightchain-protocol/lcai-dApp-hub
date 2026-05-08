@@ -1,34 +1,56 @@
-import { Plus } from "lucide-react"
-import Antigravity from "../ui/Antigravity"
-import { Button } from "../ui/Button"
-import HeroFilterArea from "./HeroFilterArea"
-import HeroSearchField from "./HeroSearchField"
+import { cn } from "@/lib/utils";
+import { Plus } from "lucide-react";
+import Antigravity from "../ui/Antigravity";
+import { Button } from "../ui/Button";
+import HeroFilterArea from "./HeroFilterArea";
+import HeroSearchField from "./HeroSearchField";
 
-const Hero = () => {
+type HeroProps = {
+  showControls?: boolean;
+};
+
+const Hero = ({ showControls = true }: HeroProps) => {
   return (
-    <section className="px-4 mb-0 py-20 relative z-1">
+    <section
+      className={cn(
+        "relative z-1 mb-0 px-4 dark:bg-surface-dark-fixed",
+        showControls ? "py-20" : "pb-[84px] pt-[108px]"
+      )}
+    >
       <div className="container mx-auto">
-        <div className="space-y-12">
-          <div className="space-y-3 md:space-y-5 max-w-[800px] mx-auto text-center">
-            <h1 className="text-[32px] md:text-4xl lg:text-5xl xl:text-[56px] font-semibold leading-[0.92] tracking-[-0.56px] text-content-strong">
+        <div className={showControls ? "space-y-12" : ""}>
+          <div className="space-y-3 md:space-y-5 max-w-[1000px] mx-auto text-center">
+            <h1
+              className={cn(
+                "font-semibold leading-[0.92] tracking-[-0.56px] text-content-strong lg:tracking-[-4px]",
+                showControls
+                  ? "text-[32px] md:text-4xl lg:text-5xl xl:text-[56px]"
+                  : "text-[40px] md:text-[64px] xl:text-[80px]"
+              )}
+            >
               Explore the dApp Universe
             </h1>
-            <p className="text-base lg:text-lg leading-[1.7] tracking-[-0.18px] text-content-bold max-w-[587px] mx-auto">
-              Discover decentralized apps built on Lightchain — from DeFi and NFTs to gaming, developer tools, and AI agents.
+            <p className="text-base lg:text-lg leading-[1.7] tracking-[-0.18px] text-content-bold max-w-[620px] mx-auto">
+              Discover decentralized apps built on Lightchain &mdash; from DeFi and NFTs to gaming, developer tools, and AI agents.
             </p>
-            <Button
-              variant="outline"
-              size="sm"
-              className="mx-auto h-9 rounded-[10px] border border-border-light bg-surface-base-dark px-4 text-xs font-semibold uppercase text-content-strong hover:bg-surface-light"
-            >
-              <Plus className="size-4" />
-              Submit your app
-            </Button>
+            {showControls ? (
+              <Button
+                href="#"
+                variant="outline"
+                size="sm"
+                className="mx-auto h-9 rounded-[10px] border border-border-light bg-surface-base-dark px-4 text-xs font-semibold uppercase text-content-strong hover:bg-surface-light"
+              >
+                <Plus className="size-4" />
+                Submit your app
+              </Button>
+            ) : null}
           </div>
-          <div className="space-y-3 md:space-y-5">
-            <HeroSearchField />
-            <HeroFilterArea />
-          </div>
+          {showControls ? (
+            <div className="space-y-3 md:space-y-5">
+              <HeroSearchField />
+              <HeroFilterArea />
+            </div>
+          ) : null}
         </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-[-1]">
@@ -51,7 +73,7 @@ const Hero = () => {
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
