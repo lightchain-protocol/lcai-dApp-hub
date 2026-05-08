@@ -110,7 +110,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
         const { width: containerW, height: containerH } = containerRef.current.getBoundingClientRect();
 
         let newFontSize = containerW / (chars.length / 2);
-        newFontSize = Math.max(newFontSize, minFontSize);
+        newFontSize = Math.min(Math.max(newFontSize, minFontSize), maxFontSize);
 
         setFontSize(newFontSize);
         setScaleY(1);
@@ -126,7 +126,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
                 setLineHeight(yRatio);
             }
         });
-    }, [chars.length, minFontSize, scale]);
+    }, [chars.length, minFontSize, maxFontSize, scale]);
 
     useEffect(() => {
         const debouncedSetSize = debounce(setSize, 100);
@@ -222,7 +222,6 @@ const TextPressure: React.FC<TextPressureProps> = ({
                     fontWeight: 100,
                     color: stroke ? undefined : textColor,
                     letterSpacing: letterSpacing,
-                    maxFontSize: `${maxFontSize}px`
                 } as React.CSSProperties}
             >
                 {chars.map((char, i) => (
