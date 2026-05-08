@@ -18,7 +18,7 @@ const ShowingResultSection = () => {
         {/* More Button */}
         <div className="flex flex-col items-center space-y-2 mt-12">
           <span className="text-xs leading-[1.2] tracking-[-0.12px] text-content-medium">
-            · · · · · · 317 More dApps · · · · · ·
+            ...... 317 More dApps ......
           </span>
           <Button
             variant={"gradient"}

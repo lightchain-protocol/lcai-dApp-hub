@@ -12,7 +12,7 @@ export default function Logo(
       onClick={onClick}
     >
       <Image
-        className="block dark:hidden"
+        className="hidden dark:block"
         src="/images/logo/logo.svg"
         height={39}
         width={200}
@@ -20,10 +20,10 @@ export default function Logo(
         priority
       />
       <Image
-        className="hidden dark:block"
+        className="block dark:hidden"
         src="/images/logo/logo-dark.svg"
         height={39}
-        width={176}
+        width={196}
         alt="LightchainAI Logo"
         priority
       />

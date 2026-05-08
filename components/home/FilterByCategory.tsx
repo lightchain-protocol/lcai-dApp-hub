@@ -75,13 +75,13 @@ const FilterByCategory = ({
   )
 
   return (
-    <div className="max-w-full relative after:content-[''] md:after:content-none after:h-full after:w-12 after:bg-[linear-gradient(90deg,rgba(6,6,14,0.00)_0%,rgba(6,6,14,0.45)_35.02%,#06060E_88.7%)] after:absolute after:right-0 after:top-0">
+    <div className="max-w-full relative after:content-[''] md:after:content-none after:h-full after:w-12 after:bg-[linear-gradient(90deg,rgba(248,249,252,0)_0%,rgba(248,249,252,0.62)_35%,#F8F9FC_89%)] after:absolute after:right-0 after:top-0 dark:after:bg-[linear-gradient(90deg,rgba(6,6,14,0)_0%,rgba(6,6,14,0.45)_35%,#06060E_89%)]">
       <div className="flex gap-2 items-center overflow-x-auto max-w-full pb-2 lg:pb-0 ">
         {primaryCategories.map((category) => (
           <Button
             key={category.id}
             variant={"ghost"}
-            className={`${selectedCategory === category.id ? "bg-surface-primary text-content-ultra hover:bg-surface-brand-default hover:text-content-white-fixed" : ""}`}
+            className={`${selectedCategory === category.id ? "bg-surface-primary text-content-white-fixed hover:bg-surface-brand-default" : ""}`}
             size="sm"
             onClick={() => onCategoryChange(category.id)}
           >
@@ -95,7 +95,7 @@ const FilterByCategory = ({
               <Button
                 variant={"ghost"}
                 size="sm"
-                className={`aria-expanded:bg-surface-primary aria-expanded:text-content-ultra ${isMoreActive ? "bg-surface-primary text-content-ultra hover:bg-surface-brand-default hover:text-content-white-fixed" : ""}`}
+                className={`aria-expanded:bg-surface-primary aria-expanded:text-content-white-fixed ${isMoreActive ? "bg-surface-primary text-content-white-fixed hover:bg-surface-brand-default" : ""}`}
               >
                 More
                 <ChevronDown className="size-5 transition-transform duration-200 group-aria-expanded/button:rotate-180" />

@@ -13,7 +13,7 @@ type FooterProps = {
 export default async function Footer({ socials, footerColumns }: FooterProps) {
 
   return (
-    <footer className="relative border-border-soft border-t bg-surface-slate-strong px-6 md:px-14 pt-20">
+    <footer className="relative border-border-soft border-t bg-background px-6 pt-20 md:px-14">
       <div className="container mx-auto z-1 relative">
         <div className="grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pb-12">
           {footerColumns.map((col) => (
@@ -65,7 +65,7 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
         </div>
         <div className="flex flex-col items-center justify-between gap-6 border-border-soft border-t py-8 text-center">
           <div className="flex items-center gap-5 text-content-bold">
-            <p>Copyright © 2026 <Link href="/" className="text-content-strong lcai-link-hover">Lightchain Protocol</Link></p>
+            <p>Copyright &copy; 2026 <Link href="/" className="text-content-strong lcai-link-hover">Lightchain Protocol</Link></p>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
             rippleThickness={0.1}
             rippleIntensityScale={0.7}
             speed={0.35}
-            transparent={false}
+            transparent
             edgeFade={0.12}
 
           />

@@ -1,4 +1,6 @@
+import { Plus } from "lucide-react"
 import Antigravity from "../ui/Antigravity"
+import { Button } from "../ui/Button"
 import HeroFilterArea from "./HeroFilterArea"
 import HeroSearchField from "./HeroSearchField"
 
@@ -14,6 +16,14 @@ const Hero = () => {
             <p className="text-base lg:text-lg leading-[1.7] tracking-[-0.18px] text-content-bold max-w-[587px] mx-auto">
               Discover decentralized apps built on Lightchain — from DeFi and NFTs to gaming, developer tools, and AI agents.
             </p>
+            <Button
+              variant="outline"
+              size="sm"
+              className="mx-auto h-9 rounded-[10px] border border-border-light bg-surface-base-dark px-4 text-xs font-semibold uppercase text-content-strong hover:bg-surface-light"
+            >
+              <Plus className="size-4" />
+              Submit your app
+            </Button>
           </div>
           <div className="space-y-3 md:space-y-5">
             <HeroSearchField />

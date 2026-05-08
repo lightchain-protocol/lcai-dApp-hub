@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-surface-primary text-content-ultra hover:bg-surface-brand-default hover:text-content-white-fixed",
+          "bg-surface-primary text-content-white-fixed hover:bg-surface-brand-default",
         primary:
-          "bg-surface-primary text-content-ultra hover:bg-surface-brand-default hover:text-content-white-fixed",
+          "bg-surface-primary text-content-white-fixed hover:bg-surface-brand-default",
         outline:
           "bg-surface-base-strong text-content-strong border-2 border-border-soft hover:opacity-90",
         gradient:

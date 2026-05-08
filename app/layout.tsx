@@ -39,7 +39,7 @@ export default async function RootLayout({
       <body
         className={`${interFont.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <Header rawMenus={rawMenus} socials={socials} />
           {children}
           <Footer footerColumns={footerColumns} socials={socials} />

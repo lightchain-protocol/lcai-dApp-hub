@@ -39,7 +39,7 @@ const Sorting = ({
             <Button
               variant="ghost"
               size={"sm"}
-              className={"aria-expanded:bg-surface-primary aria-expanded:text-content-ultra"}
+              className={"aria-expanded:bg-surface-primary aria-expanded:text-content-white-fixed"}
             >
               <ArrowUpDown className="size-4" />
               Sort By

@@ -11,6 +11,7 @@ import Logo from "../Logo";
 import { Button } from "../ui/Button";
 import ConnectWalletButton from "../ui/ConnectWalletButton";
 import UserButton from "../ui/UserButton";
+import ThemeToggleButton from "./DarkSwitcher";
 import Navbar from "./NavMenu";
 import PopupMobileMenu from "./PopupMobileMenu";
 import type { MenuConfig, NavCardItem } from "./types";
@@ -18,6 +19,7 @@ import type { MenuConfig, NavCardItem } from "./types";
 function resolveMenus(raw: RawNavConfig[]): MenuConfig[] {
   return raw.map((menu) => ({
     ...menu,
+    label: menu.label === "Blockchain" ? "Discover" : menu.label,
     columns: menu.columns.map((col) => {
       if (col.type === "cards") {
         return {
@@ -55,8 +57,8 @@ export default function Header(
           </p>
         </div>
       </div>
-      <header className="sticky top-0 z-50 w-full bg-black/50 backdrop-blur-md border-b border-border-soft">
-        <div className="flex items-center justify-between px-4 h-16 md:h-20 md:px-12.5">
+      <header className="sticky top-0 z-50 w-full border-b border-border-soft bg-surface-base-dark backdrop-blur-md dark:border-[rgba(204,206,239,0.12)] dark:bg-surface-dark-fixed/80">
+        <div className="flex h-14 items-center justify-between px-4 md:h-16 md:px-12.5">
           {/* Left: Logo */}
           <Logo />
 
@@ -67,7 +69,7 @@ export default function Header(
 
           {/* Right: Actions */}
           <div className="flex items-center gap-2 xl:gap-4">
-            {/* <ThemeToggleButton /> */}
+            <ThemeToggleButton />
             <UserButton className="hidden md:flex" />
             <ConnectWalletButton className="hidden md:flex" />
 
