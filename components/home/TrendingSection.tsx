@@ -1,7 +1,13 @@
-import { DappCardMini } from "@/components/dapp-card/DappCardMini";
+import { DappCardMini, type DappCardMiniProps } from "@/components/dapp-card/DappCardMini";
 import { Button } from "@/components/ui/Button";
 
-const TrendingSection = () => {
+type TrendingSectionProps = {
+  dapps: DappCardMiniProps[];
+};
+
+const TrendingSection = ({ dapps }: TrendingSectionProps) => {
+  if (dapps.length === 0) return null;
+
   return (
     <section className="px-4">
       <div className="container mx-auto">
@@ -66,7 +72,7 @@ const TrendingSection = () => {
 
           {/* Grid Card */}
           <div className="grid gap-2.5 md:gap-5 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(380px,1fr))] 2xl:grid-cols-[repeat(auto-fit,minmax(410px,1fr))]">
-            {trendingDapps.map((dapp) => (
+            {dapps.map((dapp) => (
               <DappCardMini
                 key={dapp.name}
                 {...dapp}
@@ -80,60 +86,3 @@ const TrendingSection = () => {
 }
 
 export default TrendingSection;
-
-const trendingDapps = [
-  {
-    id: "dapp-001",
-    name: "Uniswap",
-    description:
-      "The world's largest onchain marketplace, trusted by millions. Buy and sell crypto on Ethereum, Monad and 14+ other chains.",
-    tags: ["TRADING", "NEW"],
-    href: "https://app.uniswap.org",
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-01.png",
-  },
-  {
-    id: "dapp-002",
-    name: "Magma",
-    description:
-      "A blazing-fast DEX built for high-throughput chains with deep onchain liquidity and advanced routing.",
-    tags: ["TRADING", "DEX"],
-    href: "https://magma.finance",
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-02.png",
-  },
-  {
-    id: "dapp-003",
-    name: "KyberSwap",
-    description:
-      "Multichain liquidity hub offering best-rate swaps, yield opportunities, and onchain limit orders.",
-    tags: ["TRADING", "YIELD"],
-    href: "https://kyberswap.com",
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-03.png",
-  },
-  {
-    id: "dapp-004",
-    name: "Fomo",
-    description:
-      "Social trading and discovery platform to explore trending tokens and copy onchain strategies.",
-    tags: ["SOCIAL", "NEW"],
-    href: "https://fomo.xyz",
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-04.png",
-  },
-  {
-    id: "dapp-005",
-    name: "Monad Bridge",
-    description:
-      "Secure bridge for moving assets between Monad and major L1/L2 ecosystems with low fees.",
-    tags: ["BRIDGE", "INFRA"],
-    href: "https://bridge.monad.org",
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-05.png",
-  },
-  {
-    id: "dapp-006",
-    name: "LightLend",
-    description:
-      "Decentralized money market for supplying and borrowing assets with real-time risk controls.",
-    tags: ["LENDING", "DEFI"],
-    href: "https://lightlend.xyz",
-    iconSrc: "/images/dapp-item-logo/dapp-logo-icon-06.png",
-  },
-];

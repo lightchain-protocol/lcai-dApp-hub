@@ -70,8 +70,8 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
         </div>
       </div>
 
-      <div className="relative footer-bottom">
-        <div className="relative h-[300px] text-pressure-container">
+      <div className="relative footer-bottom isolate">
+        <div className="relative z-10 h-[300px] text-pressure-container">
           <TextPressure
             text="Lightchain"
             flex={false}
@@ -89,11 +89,11 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
           />
         </div>
 
-        <div className="absolute top-0 left-0 w-full h-full z-[-1]">
+        <div className="pointer-events-none absolute inset-0 z-0">
           <PixelBlast
             variant="square"
             pixelSize={2}
-            color="#a552f3"
+            color="#7d52f4"
             patternScale={3.5}
             patternDensity={0.2}
             enableRipples={false}
@@ -103,7 +103,6 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
             speed={0.35}
             transparent
             edgeFade={0.12}
-
           />
         </div>
       </div>

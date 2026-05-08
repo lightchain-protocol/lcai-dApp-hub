@@ -17,10 +17,10 @@ export default function ThemeToggleButton({ className }: { className?: string })
   const isDark = mounted && resolvedTheme === "dark";
 
   const classes = cn(
-    "group/theme relative inline-flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-[10px]",
-    "border border-border-light bg-[#7183FF] text-content-white-fixed shadow-[inset_0_4px_4px_rgba(255,255,255,0.18),inset_0_-1px_3px_rgba(0,8,65,0.18),0_6px_16px_rgba(0,8,65,0.08)]",
+    "group/theme relative inline-flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-[10px] cursor-pointer",
+    "border border-border-light bg-[#7183FF] text-content-white-fixed shadow-[inset_0_4px_4px_rgba(255,255,255,0.18),inset_0_-1px_3px_rgba(0,8,65,0.18),0_6px_16px_rgba(0,8,65,0.08)] hover:text-content-white-fixed",
     "dark:border-[rgba(204,206,239,0.08)] dark:bg-surface-dark-fixed dark:text-[#CCCEEF] dark:shadow-[inset_0_4px_4px_rgba(255,255,255,0.03),inset_0_-1px_3px_rgba(204,206,239,0.18),0_6px_16px_rgba(0,0,0,0.18)]",
-    "outline-none lcai-transition hover:border-border-medium hover:text-content-primary active:scale-[0.98]",
+    "outline-none lcai-transition hover:border-border-medium hover:text-content-white-fixed active:scale-[0.98]",
     "focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-offset-[#020203]",
     className
   );
