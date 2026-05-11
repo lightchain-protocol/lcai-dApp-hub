@@ -48,8 +48,8 @@ export default function Header(
 
   return (
     <>
-      <div className="py-1.5 md:py-2 bg-[url(/images/bg/topbar-bg-light.png)] dark:bg-[url(/images/bg/topbar-bg.png)] bg-no-repeat bg-cover">
-        <div className="px-4">
+      <div className="py-1.5 md:py-2 bg-[url(/images/bg/topbar-bg-light.png)] dark:bg-[url(/images/bg/topbar-bg.png)] bg-no-repeat bg-cover hidden md:block">
+        <div className="px-4 md:px-12.5 2xl:px-18">
           <p className="text-center dark:text-[#B1B3D0] text-content-soft text-xs md:text-sm font-medium leading-none">
             We&apos;re no longer active on Telegram. Join our official Discord for real-time updates and community chat:
             <Link href={"#"} className="ml-1 text-content-strong underline decoration-border-medium underline-offset-2">discord.gg/lightchain</Link>
@@ -57,27 +57,29 @@ export default function Header(
         </div>
       </div>
       <header className="sticky top-0 z-50 w-full border-b border-border-soft bg-surface-base-dark backdrop-blur-md dark:border-[rgba(204,206,239,0.12)] dark:bg-surface-dark-fixed/80">
-        <div className="flex h-14 items-center justify-between px-4 md:h-16 md:px-12.5">
-          <Logo />
+        <div className="h-14 px-4 md:h-16 md:px-12.5 2xl:px-18 flex items-center">
+          <div className="max-w-[2560px] w-full mx-auto flex items-center justify-between">
+            <Logo />
 
-          <div className="hidden xl:block">
-            <Navbar menus={menus} />
-          </div>
+            <div className="hidden xl:block">
+              <Navbar menus={menus} />
+            </div>
 
-          <div className="flex items-center gap-2 xl:gap-4">
-            <ThemeToggleButton />
-            <UserButton className="hidden md:flex" />
-            <ConnectWalletButton className="hidden md:flex" />
+            <div className="flex items-center gap-2 xl:gap-4">
+              <ThemeToggleButton />
+              <UserButton className="hidden md:flex" />
+              <ConnectWalletButton className="hidden md:flex" />
 
-            <div className="block xl:hidden">
-              <Button
-                aria-expanded={isMenuActive}
-                aria-haspopup="dialog"
-                className="size-10 p-2.5 flex items-center justify-center rounded-full border border-border-medium bg-surface-base-subtle text-content-strong lcai-transition"
-                onClick={toggleMenu}
-              >
-                <Menu size={24} />
-              </Button>
+              <div className="block xl:hidden">
+                <Button
+                  aria-expanded={isMenuActive}
+                  aria-haspopup="dialog"
+                  className="size-10 p-2.5 flex items-center justify-center rounded-full border border-border-medium bg-surface-base-subtle text-content-strong lcai-transition"
+                  onClick={toggleMenu}
+                >
+                  <Menu size={24} />
+                </Button>
+              </div>
             </div>
           </div>
         </div>

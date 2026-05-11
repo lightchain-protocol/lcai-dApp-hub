@@ -16,9 +16,9 @@ const ShowingResultSection = ({
   const remainingCount = Math.max(totalCount - dapps.length, 0);
 
   return (
-    <section className="px-4">
+    <section>
       <div className="container mx-auto">
-        <h2 className="text-lg font-semibold leading-[1.2] tracking-[-0.18px] text-content-strong mb-3">
+        <h2 className="text-lg font-semibold leading-[1.2] tracking-[-0.18px] text-content-strong mb-3 2xl:mb-6">
           Showing {dapps.length} of {totalCount}
         </h2>
 

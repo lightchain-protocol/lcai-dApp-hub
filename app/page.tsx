@@ -12,11 +12,74 @@ type DappHubData = {
   totalCount: number;
 };
 
+const dappResults: DappCardProps[] = [
+  {
+    id: "dapp-001",
+    name: "Lightchain Bridge",
+    description:
+      "Move LCAI between Ethereum and Lightchain Mainnet through a Hyperlane-powered bridge with chain-aware token routes and transaction review.",
+    tags: ["BRIDGE", "INTERCHAIN", "LCAI"],
+    iconSrc: "/images/dapp-item-logo/lightchain.png",
+    imageSrc: "/images/dapp-item-thumb/dapp-thumb-bridge.png",
+    externalUrl: "https://bridge.lightchain.ai/",
+  },
+  {
+    id: "dapp-002",
+    name: "LCAI Swap",
+    description:
+      "Swap LCAI and ecosystem tokens on the Lightchain Mainnet with pool discovery, wallet-native routing, and explorer-linked transaction feedback.",
+    tags: ["TRADING", "DEX", "TESTNET"],
+    iconSrc: "/images/dapp-item-logo/lightchain.png",
+    imageSrc: "/images/dapp-item-thumb/dapp-thumb-swap.png",
+    externalUrl: "https://dex-testnet.lightchain.ai/",
+  },
+  {
+    id: "dapp-003",
+    name: "LCAI Faucet",
+    description:
+      "Claim testnet LCAI for deployments, swaps, and contract testing. Paste a wallet, request funds, and track the claim transaction.",
+    tags: ["FAUCET", "TESTNET", "BUILDER"],
+    iconSrc: "/images/dapp-item-logo/lightchain.png",
+    imageSrc: "/images/dapp-item-thumb/dapp-thumb-faucet.png",
+    externalUrl: "https://lightfaucet.ai/",
+  },
+  {
+    id: "dapp-004",
+    name: "Lightchain Explorer",
+    description:
+      "Inspect Lightchain blocks, transactions, contracts, wallets, and network activity through a customized Blockscout explorer.",
+    tags: ["EXPLORER", "ANALYTICS", "MAINNET"],
+    iconSrc: "/images/dapp-item-logo/lightchain.png",
+    imageSrc: "/images/dapp-item-thumb/dapp-thumb-lce.png",
+    externalUrl: "https://mainnet.lightscan.app/",
+  },
+  {
+    id: "dapp-005",
+    name: "Worker Explorer",
+    description:
+      "Browse workers powering decentralized AI on Lightchain with super models. Track online workers, stakes, supported models, and node details.",
+    tags: ["AI", "WORKERS", "MAINNET"],
+    iconSrc: "/images/dapp-item-logo/lightchain.png",
+    imageSrc: "/images/dapp-item-thumb/dapp-thumb-we.png",
+    externalUrl: "https://workers.lightchain.ai/",
+  },
+  {
+    id: "dapp-006",
+    name: "Lightchain IDE",
+    description:
+      "Write, compile, test, and deploy smart contracts in a browser workspace adapted from Remix for Lightchain builders.",
+    tags: ["IDE", "DEVTOOLS", "CONTRACTS"],
+    iconSrc: "/images/dapp-item-logo/lightchain.png",
+    imageSrc: "/images/dapp-item-thumb/dapp-thumb-ide.png",
+    externalUrl: "https://deploy.lightchain.ai/",
+  },
+];
+
 async function getDappHubData(): Promise<DappHubData> {
   return {
     trendingDapps: [],
-    dappResults: [],
-    totalCount: 0,
+    dappResults,
+    totalCount: dappResults.length,
   };
 }
 
@@ -30,7 +93,7 @@ export default async function Home() {
       {hasDapps ? (
         <div className="relative z-1">
           <DottedLineBackground />
-          <div className="relative z-10 space-y-12 py-20">
+          <div className="relative z-10 space-y-12 2xl:space-y-18 py-10 md:py-12 xl:py-14 2xl:py-20">
             <TrendingSection dapps={trendingDapps} />
             <ShowingResultSection dapps={dappResults} totalCount={totalCount} />
           </div>
