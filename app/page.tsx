@@ -22,6 +22,8 @@ const dappResults: DappCardProps[] = [
     iconSrc: "/images/dapp-item-logo/lightchain.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-bridge.png",
     externalUrl: "https://bridge.lightchain.ai/",
+    added_by_team: true,
+    powered_by_lightchain: true,
   },
   {
     id: "dapp-002",
@@ -32,6 +34,8 @@ const dappResults: DappCardProps[] = [
     iconSrc: "/images/dapp-item-logo/lightchain.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-swap.png",
     externalUrl: "https://dex-testnet.lightchain.ai/",
+    added_by_team: true,
+    powered_by_lightchain: true,
   },
   {
     id: "dapp-003",
@@ -42,6 +46,8 @@ const dappResults: DappCardProps[] = [
     iconSrc: "/images/dapp-item-logo/lightchain.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-faucet.png",
     externalUrl: "https://lightfaucet.ai/",
+    added_by_team: true,
+    powered_by_lightchain: true,
   },
   {
     id: "dapp-004",
@@ -52,6 +58,8 @@ const dappResults: DappCardProps[] = [
     iconSrc: "/images/dapp-item-logo/lightchain.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-lce.png",
     externalUrl: "https://mainnet.lightscan.app/",
+    added_by_team: true,
+    powered_by_lightchain: true,
   },
   {
     id: "dapp-005",
@@ -62,6 +70,8 @@ const dappResults: DappCardProps[] = [
     iconSrc: "/images/dapp-item-logo/lightchain.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-we.png",
     externalUrl: "https://workers.lightchain.ai/",
+    added_by_team: true,
+    powered_by_lightchain: true,
   },
   {
     id: "dapp-006",
@@ -72,6 +82,20 @@ const dappResults: DappCardProps[] = [
     iconSrc: "/images/dapp-item-logo/lightchain.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-ide.png",
     externalUrl: "https://deploy.lightchain.ai/",
+    added_by_team: true,
+    powered_by_lightchain: true,
+  },
+  {
+    id: "dapp-007",
+    name: "Example dApp",
+    description:
+      "This is a example dapp description for the dapp card component.",
+    tags: ["EXAMPLE", "DEMO", "TEST"],
+    iconSrc: "/images/dapp-item-logo/example-logo.png",
+    imageSrc: "/images/dapp-item-thumb/example-dapp.png",
+    externalUrl: "https://example.com/",
+    added_by_team: false,
+    powered_by_lightchain: false,
   },
 ];
 

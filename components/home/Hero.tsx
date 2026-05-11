@@ -36,9 +36,9 @@ const Hero = ({ showControls = true }: HeroProps) => {
             {showControls ? (
               <Button
                 href="#"
-                variant="outline"
+                variant="primary"
                 size="md"
-                className="mx-auto h-9 rounded-[10px] border-2 border-border-weak bg-surface-base-dark px-4 text-base font-semibold uppercase text-content-strong hover:bg-surface-light"
+                className="mx-auto h-9 rounded-[10px] bg-surface-primary px-4 text-base font-semibold uppercase text-content-white-fixed hover:bg-surface-primary"
               >
                 <Plus className="size-4" />
                 Submit your app
