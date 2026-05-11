@@ -13,12 +13,12 @@ const Hero = ({ showControls = true }: HeroProps) => {
   return (
     <section
       className={cn(
-        "relative z-1 mb-0 px-4 dark:bg-surface-dark-fixed",
-        showControls ? "py-20" : "pb-[84px] pt-[108px]"
+        "relative z-1 mb-0 dark:bg-surface-dark-fixed",
+        showControls ? "py-10 md:py-12 xl:py-14 2xl:py-20" : "pb-[84px] pt-[108px]"
       )}
     >
       <div className="container mx-auto">
-        <div className={showControls ? "space-y-12" : ""}>
+        <div className={showControls ? "space-y-12 2xl:space-y-18" : ""}>
           <div className="space-y-3 md:space-y-5 max-w-[1000px] mx-auto text-center">
             <h1
               className={cn(
@@ -37,8 +37,8 @@ const Hero = ({ showControls = true }: HeroProps) => {
               <Button
                 href="#"
                 variant="outline"
-                size="sm"
-                className="mx-auto h-9 rounded-[10px] border border-border-light bg-surface-base-dark px-4 text-xs font-semibold uppercase text-content-strong hover:bg-surface-light"
+                size="md"
+                className="mx-auto h-9 rounded-[10px] border-2 border-border-weak bg-surface-base-dark px-4 text-base font-semibold uppercase text-content-strong hover:bg-surface-light"
               >
                 <Plus className="size-4" />
                 Submit your app

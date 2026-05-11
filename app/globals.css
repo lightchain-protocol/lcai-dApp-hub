@@ -75,6 +75,7 @@
   --color-border-medium: var(--border-medium);
   --color-border-brand: var(--border-brand);
   --color-border-deep: var(--border-deep);
+  --color-border-weak: var(--border-weak);
 
   /* Background Colors */
   --color-background-dark: var(--background-dark);
@@ -191,6 +192,7 @@
   --border-medium: rgba(0, 8, 65, 0.24);
   --border-brand: #8C52FF;
   --border-deep: #181822;
+  --border-weak: rgba(204, 206, 239, 0.24);
 
   /* Background Colors */
   --background-dark: #FFFFFF;
@@ -299,6 +301,7 @@
   --border-medium: rgba(204, 206, 239, 0.40);
   --border-brand: #7D52F4;
   --border-deep: #020203;
+  --border-weak: rgba(204, 206, 239, 0.24);
 
   /* Background Colors */
   --background-dark: #000000;
@@ -348,7 +351,7 @@ body {
 
 @layer utilities {
   .container {
-    @apply max-w-[1320px];
+    @apply max-w-[2560px] mx-auto px-4 md:px-12.5 2xl:px-18;
   }
 }
 

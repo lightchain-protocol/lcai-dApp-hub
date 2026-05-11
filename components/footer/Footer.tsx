@@ -65,7 +65,7 @@ export default async function Footer({ socials, footerColumns }: FooterProps) {
         </div>
         <div className="flex flex-col items-center justify-between gap-6 border-border-soft border-t py-8 text-center">
           <div className="flex items-center gap-5 text-content-bold">
-            <p>Copyright &copy; 2026 <Link href="/" className="text-content-strong lcai-link-hover">Lightchain Protocol</Link></p>
+            <p>Copyright &copy; 2026 <Link href="https://lightchain.ai" className="text-content-strong lcai-link-hover">Lightchain Protocol</Link></p>
           </div>
         </div>
       </div>

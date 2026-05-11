@@ -11,7 +11,7 @@ const TrendingSection = ({ dapps }: TrendingSectionProps) => {
   return (
     <section className="px-4">
       <div className="container mx-auto">
-        <div className="space-y-4 px-6 py-6 bg-surface-base-extra-light backdrop-blur-sm">
+        <div className="space-y-4 py-6 bg-surface-base-extra-light backdrop-blur-sm">
           <div className="flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
             {/* Section Title */}
             <div className="flex gap-1 items-center">
