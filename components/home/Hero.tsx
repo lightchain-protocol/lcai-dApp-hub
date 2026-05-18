@@ -35,7 +35,7 @@ const Hero = ({ showControls = true }: HeroProps) => {
             </p>
             {showControls ? (
               <Button
-                href="#"
+                href="https://github.com/lightchain-protocol/lcai-dApp-hub#submit-a-dapp"
                 variant="primary"
                 size="md"
                 className="mx-auto h-9 rounded-[10px] bg-surface-primary px-4 text-base font-semibold uppercase text-content-white-fixed hover:bg-surface-primary"
