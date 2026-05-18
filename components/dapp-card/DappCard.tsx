@@ -8,7 +8,7 @@ import type { ReactNode } from "react";
 import { useCallback, useMemo, useState } from "react";
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
-import { ExternalLink } from "lucide-react";
+import { BadgeCheck, ExternalLink } from "lucide-react";
 import { DappSafetyDialog } from "./DappSafetyDialog";
 
 export type DappCardProps = {
@@ -18,7 +18,7 @@ export type DappCardProps = {
   tags: string[];
   iconSrc: string;
   imageSrc: string;
-  externalUrl: string;
+  externalUrl?: string;
   added_by_team?: boolean;
   addedByTeam?: boolean;
   powered_by_lightchain?: boolean;
@@ -98,12 +98,11 @@ export function DappCard({
   const internalHref = `/${slug}`;
   const [isSafetyDialogOpen, setIsSafetyDialogOpen] = useState(false);
 
-  const isExplicitThirdParty = (addedByTeam ?? added_by_team) === false;
+  const isAddedByTeam = (addedByTeam ?? added_by_team) === true;
   const isPoweredByLightchain =
     (poweredByLightchain ?? powered_by_lightchain) === true;
-  const shouldShowSafetyWarning = Boolean(
-    externalUrl && isExplicitThirdParty && !isPoweredByLightchain
-  );
+  const isOfficial = isAddedByTeam || isPoweredByLightchain;
+  const shouldShowSafetyWarning = Boolean(externalUrl && !isOfficial);
   const shouldGateExternalUrl = shouldShowSafetyWarning;
   const safetyDismissalKey = useMemo(
     () => (externalUrl ? `lcai:dapp-safety-dismissed:${externalUrl}` : ""),
@@ -221,6 +220,18 @@ export function DappCard({
               >
                 {name}
               </CardLink>
+              
+              {/* Official badge — shown only for dApps built by the team */}
+              {isOfficial && (
+                <span
+                  aria-label="Official Lightchain dApp"
+                  title="Official Lightchain dApp"
+                  className="pointer-events-none ml-2.5 inline-flex items-center gap-1 rounded-full dark:bg-[rgba(255,255,255,0.023)] bg-surface-base-dark backdrop-blur-[42px] px-2.5 py-1 text-[11px] font-semibold uppercase leading-none tracking-[0.04em] dark:text-white text-content-strong"
+                >
+                  <BadgeCheck aria-hidden="true" className="size-4 mb-px" strokeWidth={2.25} />
+                  Official
+                </span>
+              )}
             </h3>
             <p className="text-base leading-normal tracking-[-0.16px] text-content-bold line-clamp-3">
               {description}
