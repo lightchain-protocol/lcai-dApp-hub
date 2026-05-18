@@ -14,8 +14,9 @@ const interFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lightchain dApp",
-  description: "Lightchain dApp Hub",
+  title: "Lightchain DApp Hub",
+  description:
+    "Discover decentralized apps built on Lightchain. Browse DeFi, NFTs, gaming, developer tools, and AI agents—or submit your dApp to the hub.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
