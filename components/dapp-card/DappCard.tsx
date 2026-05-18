@@ -221,7 +221,7 @@ export function DappCard({
                 {name}
               </CardLink>
               
-              {/* Official badge — shown only for dApps built by the team or powered by Lightchain */}
+              {/* Official badge — shown only for dApps built by the team */}
               {isOfficial && (
                 <span
                   aria-label="Official Lightchain dApp"
