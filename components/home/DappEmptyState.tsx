@@ -1,7 +1,7 @@
 import { Plus } from "lucide-react";
 import DottedLineBackground from "../ui/DottedLineBackground";
 import { Button } from "../ui/Button";
-import NodAppBox from "../dapp-card/NodAppBox";
+import NoDAppBox from "../dapp-card/NoDAppBox";
 
 function EmptyBoxIllustration() {
   return (
@@ -72,7 +72,7 @@ export default function DappEmptyState() {
         lineClassName="z-0 h-full w-px border-l border-dashed border-[#000841]/20 opacity-60 motion-safe:animate-[dotted-line-flow_1.2s_linear_infinite]"
       />
       <div className="relative z-10 mx-auto flex max-w-[560px] flex-col items-center">
-        <NodAppBox />
+        <NoDAppBox />
         <h2 className="mt-7 text-[28px] font-semibold leading-[1.2] tracking-[-0.28px] text-content-strong md:text-[32px]">
           No dApps Listed Yet
         </h2>

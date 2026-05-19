@@ -5,8 +5,7 @@ import Hero from "@/components/home/Hero";
 import ShowingResultSection from "@/components/home/ShowingResultSection";
 import TrendingSection from "@/components/home/TrendingSection";
 import DottedLineBackground from "@/components/ui/DottedLineBackground";
-import { dappsList } from "@/constants/dapps";
-import { loadAdditionalDapps } from "../lib/loadAdditionalDapps";
+import { getAllDapps } from "@/lib/dapps";
 
 type DappHubData = {
   trendingDapps: DappCardMiniProps[];
@@ -15,9 +14,12 @@ type DappHubData = {
 };
 
 async function getDappHubData(): Promise<DappHubData> {
-  const additionalDapps = await loadAdditionalDapps();
-  const dappResults = [...additionalDapps, ...dappsList];
+  const dappResults = await getAllDapps();
 
+  // NOTE: `trendingDapps` is intentionally empty until the backend team ships
+  // a real trending data source (page views, click-throughs, analytics feed).
+  // See BUGS.md #B9. The TrendingSection component already hides itself when
+  // the list is empty, so the page renders cleanly in the meantime.
   return {
     trendingDapps: [],
     dappResults,

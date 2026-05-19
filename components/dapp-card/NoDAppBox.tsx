@@ -1,5 +1,5 @@
 
-const NodAppBox = () => {
+const NoDAppBox = () => {
     return (
         <>
             <svg
@@ -390,4 +390,4 @@ const NodAppBox = () => {
     )
 }
 
-export default NodAppBox
+export default NoDAppBox

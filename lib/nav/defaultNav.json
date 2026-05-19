@@ -1,0 +1,39 @@
+[
+  {
+    "label": "dApps",
+    "align": "left",
+    "width": "small",
+    "columns": [
+      {
+        "type": "cards",
+        "items": [
+          {
+            "label": "Browse dApps",
+            "desc": "Explore the Lightchain ecosystem",
+            "href": "https://hub.lightchain.ai",
+            "iconKey": "boxes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Docs",
+    "align": "left",
+    "width": "small",
+    "columns": [
+      {
+        "type": "cards",
+        "items": [
+          {
+            "label": "Documentation",
+            "desc": "Lightchain developer docs",
+            "href": "https://docs.lightchain.ai",
+            "iconKey": "book-open",
+            "target": "_blank"
+          }
+        ]
+      }
+    ]
+  }
+]

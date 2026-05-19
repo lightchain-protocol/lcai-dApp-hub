@@ -153,7 +153,7 @@ For a full list of what's currently in the hub, see [`constants/dapps.ts`](./con
 │   │   ├── DappCard.tsx
 │   │   ├── DappCardMini.tsx
 │   │   ├── DappSafetyDialog.tsx
-│   │   └── NodAppBox.tsx         # (Typo - see BUGS.md.)
+│   │   └── NoDAppBox.tsx         # Empty-state illustration.
 │   ├── dapp-details/             # Detail page sidebar + content (currently hardcoded - see BUGS.md)
 │   ├── home/                     # Hero, search field, filters, sorting, trending, empty state
 │   ├── header/, footer/          # Top nav + site footer, populated from docs.lightchain.ai JSON
