@@ -80,6 +80,7 @@ export default function DappEmptyState() {
           Got a project built on Lightchain? This is your stage &mdash; submit your dApp and get discovered.
         </p>
         <Button
+          href="https://github.com/lightchain-protocol/lcai-dApp-hub#submit-a-dapp"
           className="mt-12 h-14 rounded-[10px] px-6 text-base font-semibold uppercase"
           size="md"
           variant="gradient"

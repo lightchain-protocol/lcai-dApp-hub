@@ -113,13 +113,9 @@ export function DappCard({
     if (externalUrl && safetyDismissalKey) {
       try {
         if (window.localStorage.getItem(safetyDismissalKey) === "true") {
-          const openedWindow = window.open(
-            externalUrl,
-            "_blank",
-            "noopener,noreferrer"
-          );
-
-          if (openedWindow) openedWindow.opener = null;
+          // `noopener` already nulls the returned window's `opener` per spec,
+          // so window.open returns null - no follow-up assignment needed.
+          window.open(externalUrl, "_blank", "noopener,noreferrer");
           return;
         }
       } catch {
@@ -141,7 +137,7 @@ export function DappCard({
   }, [safetyDismissalKey]);
 
   return (
-    <article rel="noreferrer" className="group block h-full">
+    <article className="group block h-full">
       <div
         className={clsx(
           "relative flex h-full flex-col overflow-hidden",

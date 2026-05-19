@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: I want to list my dApp
+    url: https://github.com/lightchain-protocol/lcai-dApp-hub#submit-a-dapp
+    about: Submit a PR directly — much faster than opening an issue.
+  - name: Lightchain Discord
+    url: https://discord.gg/lightchain
+    about: For Lightchain protocol questions, network status, or general support.
+  - name: Lightchain docs
+    url: https://docs.lightchain.ai
+    about: Read the developer documentation.
+  - name: Security vulnerability
+    url: https://github.com/lightchain-protocol/lcai-dApp-hub/blob/main/SECURITY.md
+    about: Please email security@lightchain.ai rather than opening a public issue.

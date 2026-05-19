@@ -1,0 +1,63 @@
+name: Submit a dApp (request)
+description: Ask a maintainer to add your dApp, OR check if you should open a PR yourself.
+title: "[dapp] add "
+labels: ["dapp-submission", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Prefer to send a PR?** That's the fastest path — see [README § Submit a dApp](https://github.com/lightchain-protocol/lcai-dApp-hub/blob/main/README.md#submit-a-dapp). Issues like this are for cases where you can't open a PR (e.g. you don't use Git) or you'd like a maintainer to review before you submit.
+
+  - type: input
+    id: name
+    attributes:
+      label: dApp name
+      placeholder: Acme Swap
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: dApp URL (must be https://)
+      placeholder: https://acme-swap.example/
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description (≤ 160 characters)
+      placeholder: A liquidity-routing DEX with the best swap rates on Lightchain.
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (comma-separated, all uppercase, 1-3)
+      placeholder: DEFI, SWAP, MAINNET
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lightchain-fit
+    attributes:
+      label: How does your dApp run on Lightchain?
+      options:
+        - Smart contracts deployed on Lightchain mainnet
+        - Uses Lightchain's AI worker network
+        - Bridges to/from Lightchain
+        - Developer tool for Lightchain builders
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: |
+        - Links to your contract addresses
+        - Audits or security reviews
+        - Twitter / Discord for the project

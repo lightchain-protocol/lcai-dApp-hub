@@ -1,0 +1,80 @@
+name: Bug report
+description: Something on hub.lightchain.ai is broken or behaves unexpectedly.
+title: "[bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. Please check [`BUGS.md`](https://github.com/lightchain-protocol/lcai-dApp-hub/blob/main/BUGS.md) first — your issue may already be tracked.
+
+  - type: input
+    id: summary
+    attributes:
+      label: One-line summary
+      placeholder: "Dark mode toggle doesn't persist across page navigations"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Visit https://hub.lightchain.ai
+        2. Click the dark/light theme toggle in the header
+        3. Click on any dApp card
+        4. Observe that theme has reset to light
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Blocks core functionality
+        - Visible but workaround exists
+        - Cosmetic / polish
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser + OS
+      placeholder: "Chrome 132 on Windows 11"
+    validations:
+      required: true
+
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport size
+      placeholder: "Desktop 1440×900 / Mobile 375×812"
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot / screen recording
+      description: Drag-and-drop images or video here.
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console errors
+      render: text
