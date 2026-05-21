@@ -23,6 +23,18 @@ export type DappCardProps = {
   addedByTeam?: boolean;
   powered_by_lightchain?: boolean;
   poweredByLightchain?: boolean;
+  // Optional detail-page fields (read by app/[slug]/page.tsx). All optional
+  // so existing entries and community submissions keep working untouched.
+  tagline?: string;
+  longDescription?: string;
+  websiteUrl?: string;
+  docsUrl?: string;
+  discordUrl?: string;
+  twitterUrl?: string;
+  listedOn?: string;
+  lastUpdated?: string;
+  projectId?: string;
+  screenshots?: { src: string; alt: string; label?: string }[];
 };
 
 type CardLinkProps = {
