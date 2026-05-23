@@ -1,0 +1,9 @@
+{
+  "id": "dapp-orcafiles",
+  "name": "OrcaFiles",
+  "description": "Local-first encrypted file organizer powered by Lightchain. Protect personal, family, and business files with 3 levels of security — organize only, encrypt locally, or encrypt and back up to the blockchain. PIN-based multi-user access, succession planning, and blockchain backup ensure your files are safe, private, and never lost.",
+  "tags": ["TOOLS", "STORAGE", "MAINNET"],
+  "iconSrc": "/images/dapp-item-logo/orcafiles.png",
+  "imageSrc": "/images/dapp-item-thumb/orcafiles-thumb.png",
+  "externalUrl": "https://orcafiles.ai"
+}
