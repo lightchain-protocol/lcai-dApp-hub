@@ -3,7 +3,7 @@
   "name": "OrcaLearn",
   "description": "AI-powered homeschool platform on Lightchain. Generate custom lesson plans for any subject and grade using AIVM, track student progress, and practice with a built-in math quiz engine — all wallet-controlled, free to start.",
   "tags": ["TOOLS", "AI", "EDUCATION"],
-  "iconSrc": "/images/dapp-item-logo/orcalearn.png",
+  "iconSrc": "/images/dapp-item-logo/orcalearn-logo.png",
   "imageSrc": "/images/dapp-item-thumb/orcalearn-thumb.png",
   "externalUrl": "https://orcalearn.ai"
 }
