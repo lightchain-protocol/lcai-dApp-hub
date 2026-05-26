@@ -1,7 +1,7 @@
 {
   "id": "dapp-nodebuilder",
   "name": "Node Builder",
-  "description": "Free step-by-step wizard for setting up a Lightchain AI worker node. Built by a real operator — every command copy-paste ready, every gotcha documented, AI assistant included. No developer background needed.",
+  "description": "Free guided wizard for setting up a Lightchain AI worker node — built by a real operator to help grow the network. Every command is copy-paste ready, every gotcha is documented, and an AI assistant answers your questions. No developer background needed. More nodes = stronger Lightchain.",
   "tags": ["AI", "TOOLS", "WORKERS"],
   "iconSrc": "/images/dapp-item-logo/nodebuilder-logo.png",
   "imageSrc": "/images/dapp-item-thumb/nodebuilder-thumb.png",
