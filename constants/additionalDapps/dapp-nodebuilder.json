@@ -1,0 +1,9 @@
+{
+  "id": "dapp-nodebuilder",
+  "name": "Node Builder",
+  "description": "Free step-by-step wizard for setting up a Lightchain AI worker node. Built by a real operator — every command copy-paste ready, every gotcha documented, AI assistant included. No developer background needed.",
+  "tags": ["AI", "TOOLS", "WORKERS"],
+  "iconSrc": "/images/dapp-item-logo/nodebuilder-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/nodebuilder-thumb.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/orcanode/"
+}
