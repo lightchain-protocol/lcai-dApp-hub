@@ -1,0 +1,9 @@
+{
+  "id": "dapp-orcaguard",
+  "name": "OrcaGuard",
+  "description": "Scam and contract checker for Lightchain. Verify contract addresses, URLs, and wallets before you interact. Includes a Buy LCAI Safely guide, common scam patterns, and an AI-powered chat for instant security questions.",
+  "tags": ["TOOLS", "SECURITY", "AI"],
+  "iconSrc": "/images/dapp-item-logo/orcaguard-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/orcaguard-thumb.png",
+  "externalUrl": "https://orcaguard.ai"
+}
