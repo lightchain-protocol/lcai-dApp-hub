@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "title": "Lightchain",
+      "style": "top",
+      "links": [
+        { "text": "Hub", "href": "https://hub.lightchain.ai" },
+        {
+          "text": "Documentation",
+          "href": "https://docs.lightchain.ai",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "style": "bottom",
+      "links": [
+        {
+          "text": "Privacy",
+          "href": "https://lightchain.ai/privacy",
+          "target": "_blank"
+        },
+        {
+          "text": "Terms",
+          "href": "https://lightchain.ai/terms",
+          "target": "_blank"
+        }
+      ]
+    }
+  ],
+  "social": [
+    {
+      "text": "X (Twitter)",
+      "href": "https://x.com/LightchainAI",
+      "target": "_blank",
+      "iconKey": "twitter"
+    },
+    {
+      "text": "Discord",
+      "href": "https://discord.gg/lightchain",
+      "target": "_blank",
+      "iconKey": "discord"
+    }
+  ]
+}

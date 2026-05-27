@@ -1,4 +1,5 @@
 import type { DappCardProps } from "@/components/dapp-card/DappCard";
+import { isKnownDappTag } from "@/lib/dappTags";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -36,6 +37,15 @@ function isHttpUrl(value: unknown): value is string {
   }
 }
 
+/**
+ * Validate that `value` is a non-empty array of canonical, uppercase tags
+ * from the README's tag taxonomy. See `lib/dappTags.ts`.
+ */
+function isValidTagList(value: unknown): value is string[] {
+  if (!Array.isArray(value) || value.length === 0) return false;
+  return value.every(isKnownDappTag);
+}
+
 function hasRequiredDappFields(
   dappResultItem: unknown
 ): dappResultItem is DappCardProps {
@@ -48,8 +58,7 @@ function hasRequiredDappFields(
       dapp.name.trim().length > 0 &&
       typeof dapp.description === "string" &&
       dapp.description.trim().length > 0 &&
-      Array.isArray(dapp.tags) &&
-      dapp.tags.every((tag) => typeof tag === "string") &&
+      isValidTagList(dapp.tags) &&
       isAllowedAssetPath(dapp.iconSrc, ALLOWED_ICON_PREFIX) &&
       isAllowedAssetPath(dapp.imageSrc, ALLOWED_IMAGE_PREFIX) &&
       isHttpUrl(dapp.externalUrl)
@@ -65,7 +74,8 @@ async function loadOne(fileName: string): Promise<DappCardProps | null> {
     if (!hasRequiredDappFields(parsedFile)) {
       console.warn(
         `[additionalDapps] Skipping ${fileName}: missing or invalid required fields. ` +
-          `See README § "Submit a dApp" for the expected schema.`
+          `Check id/name/description, asset paths under /images/dapp-item-{logo,thumb}/, ` +
+          `https externalUrl, and tags from the canonical taxonomy (see README § "Tag taxonomy").`
       );
       return null;
     }
