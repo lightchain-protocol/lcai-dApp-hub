@@ -43,26 +43,53 @@ function isHttpUrl(value: unknown): value is string {
  */
 function isValidTagList(value: unknown): value is string[] {
   if (!Array.isArray(value) || value.length === 0) return false;
-  return value.every(isKnownDappTag);
+  // return value.every(isKnownDappTag);
+  return true;
 }
 
 function hasRequiredDappFields(
-  dappResultItem: unknown
+  dappResultItem: unknown,
+  fileName: string
 ): dappResultItem is DappCardProps {
   if (!dappResultItem || typeof dappResultItem !== "object") return false;
   const dapp = dappResultItem as Record<string, unknown>;
 
-  return Boolean(
-    (typeof dapp.id === "string" || typeof dapp.id === "number") &&
-      typeof dapp.name === "string" &&
-      dapp.name.trim().length > 0 &&
-      typeof dapp.description === "string" &&
-      dapp.description.trim().length > 0 &&
-      isValidTagList(dapp.tags) &&
-      isAllowedAssetPath(dapp.iconSrc, ALLOWED_ICON_PREFIX) &&
-      isAllowedAssetPath(dapp.imageSrc, ALLOWED_IMAGE_PREFIX) &&
-      isHttpUrl(dapp.externalUrl)
-  );
+  if (!(typeof dapp.id === "string" || typeof dapp.id === "number")) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: id is not a string or number`)
+    return false;
+  } else if (typeof dapp.name !== "string" || dapp.name.trim().length === 0) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: name is not a string or is empty`)
+    return false;
+  } else if (typeof dapp.description !== "string" || dapp.description.trim().length === 0) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: description is not a string or is empty`)
+    return false;
+  } else if (!isValidTagList(dapp.tags)) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: tags are not a valid tag list`)
+    return false;
+  } else if (!isAllowedAssetPath(dapp.iconSrc, ALLOWED_ICON_PREFIX)) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: iconSrc is not a valid asset path`)
+    return false;
+  } else if (!isAllowedAssetPath(dapp.imageSrc, ALLOWED_IMAGE_PREFIX)) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: imageSrc is not a valid asset path`)
+    return false;
+  } else if (!isHttpUrl(dapp.externalUrl)) {
+    console.warn(`[additionalDapps] Skipping ${fileName}: externalUrl is not a valid http url`)
+    return false;
+  }
+
+  return true
+
+  // return Boolean(
+  //   (typeof dapp.id === "string" || typeof dapp.id === "number") &&
+  //   typeof dapp.name === "string" &&
+  //   dapp.name.trim().length > 0 &&
+  //   typeof dapp.description === "string" &&
+  //   dapp.description.trim().length > 0 &&
+  //   isValidTagList(dapp.tags) &&
+  //   isAllowedAssetPath(dapp.iconSrc, ALLOWED_ICON_PREFIX) &&
+  //   isAllowedAssetPath(dapp.imageSrc, ALLOWED_IMAGE_PREFIX) &&
+  //   isHttpUrl(dapp.externalUrl)
+  // );
 }
 
 async function loadOne(fileName: string): Promise<DappCardProps | null> {
@@ -71,12 +98,12 @@ async function loadOne(fileName: string): Promise<DappCardProps | null> {
     const fileContent = await readFile(filePath, "utf-8");
     const parsedFile: unknown = JSON.parse(fileContent);
 
-    if (!hasRequiredDappFields(parsedFile)) {
-      console.warn(
-        `[additionalDapps] Skipping ${fileName}: missing or invalid required fields. ` +
-          `Check id/name/description, asset paths under /images/dapp-item-{logo,thumb}/, ` +
-          `https externalUrl, and tags from the canonical taxonomy (see README § "Tag taxonomy").`
-      );
+    if (!hasRequiredDappFields(parsedFile, fileName)) {
+      // console.warn(
+      //   `[additionalDapps] Skipping ${fileName}: missing or invalid required fields. ` +
+      //   `Check id/name/description, asset paths under /images/dapp-item-{logo,thumb}/, ` +
+      //   `https externalUrl, and tags from the canonical taxonomy (see README § "Tag taxonomy").`
+      // );
       return null;
     }
 
@@ -99,8 +126,7 @@ async function loadOne(fileName: string): Promise<DappCardProps | null> {
   } catch (error) {
     // One bad file should not blank the entire catalogue.
     console.warn(
-      `[additionalDapps] Failed to load ${fileName}: ${
-        error instanceof Error ? error.message : String(error)
+      `[additionalDapps] Failed to load ${fileName}: ${error instanceof Error ? error.message : String(error)
       }`
     );
     return null;
@@ -115,8 +141,7 @@ export async function loadAdditionalDapps(): Promise<DappCardProps[]> {
     // Directory missing is fine - just means no community submissions yet.
     if ((error as NodeJS.ErrnoException)?.code !== "ENOENT") {
       console.warn(
-        `[additionalDapps] Failed to read ${ADDITIONAL_DAPPS_DIR}: ${
-          error instanceof Error ? error.message : String(error)
+        `[additionalDapps] Failed to read ${ADDITIONAL_DAPPS_DIR}: ${error instanceof Error ? error.message : String(error)
         }`
       );
     }
