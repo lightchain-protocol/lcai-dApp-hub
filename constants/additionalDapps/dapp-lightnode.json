@@ -1,0 +1,9 @@
+{
+  "id": "dapp-lightnode",
+  "name": "LightNode",
+  "description": "Run a Lightchain AI worker from your desktop in a few clicks: connect a wallet, check your machine, one-click install, then watch live earnings.",
+  "tags": ["AI", "WORKERS", "TOOLS"],
+  "iconSrc": "/images/dapp-item-logo/lightnode-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/lightnode-thumb.png",
+  "externalUrl": "https://lightnode.app/"
+}
