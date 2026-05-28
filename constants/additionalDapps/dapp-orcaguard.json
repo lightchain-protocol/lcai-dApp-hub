@@ -1,9 +1,13 @@
 {
   "id": "dapp-orcaguard",
   "name": "OrcaGuard",
-  "description": "Scam and contract checker for Lightchain. Verify contract addresses, URLs, and wallets before you interact. Includes a Buy LCAI Safely guide, common scam patterns, and an AI-powered chat for instant security questions.",
-  "tags": ["TOOLS", "SECURITY", "AI"],
+  "description": "FREE — AI-powered crypto safety assistant for the Lightchain community. Check any contract address, website, or wallet before you interact. Plain-English verdicts. Powered by Lightchain AIVM. Protects against honeypots, phishing, fake tokens, and airdrop scams.",
+  "tags": [
+    "AI",
+    "TOOLS",
+    "SECURITY"
+  ],
   "iconSrc": "/images/dapp-item-logo/orcaguard-logo.png",
   "imageSrc": "/images/dapp-item-thumb/orcaguard-thumb.png",
-  "externalUrl": "https://orcaguard.ai"
+  "externalUrl": "https://keiko-dev-lcai.github.io/orcaguard/"
 }
