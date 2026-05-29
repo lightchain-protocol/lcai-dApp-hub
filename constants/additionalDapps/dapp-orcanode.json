@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcanode",
+  "name": "OrcaNode",
+  "tagline": "Set up your Lightchain worker node, step by step",
+  "description": "Lightchain AI worker node setup and monitor. Step-by-step guidance for running a node, live job stats, earnings tracker, draggable AI chat panel, and a downloadable template kit — built for non-technical node operators.",
+  "tags": [
+    "TOOLS",
+    "WORKERS",
+    "AI"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcanode-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/orcanode-thumb.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/orcanode"
+}

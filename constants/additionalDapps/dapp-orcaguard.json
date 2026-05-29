@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcaguard",
+  "name": "OrcaGuard",
+  "tagline": "Your AI bodyguard for crypto safety",
+  "description": "FREE — AI-powered crypto safety assistant for the Lightchain community. Check any contract address, website, or wallet before you interact. Plain-English verdicts. Powered by Lightchain AIVM. Protects against honeypots, phishing, fake tokens, and airdrop scams.",
+  "tags": [
+    "AI",
+    "TOOLS",
+    "INFRA"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcaguard-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/orcaguard-thumb.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/orcaguard/"
+}

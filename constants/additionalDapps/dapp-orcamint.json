@@ -1,0 +1,10 @@
+{
+  "id": "dapp-orcamint",
+  "name": "OrcaMint",
+  "tagline": "Lightchain's first NFT marketplace, AI-enhanced",
+  "description": "The first NFT marketplace on Lightchain. Mint for free, create collections for $1, buy and sell with 2.5% platform fees. AI-powered descriptions and tags via AIVM. Every NFT is labeled by origin — artist upload, AI-enhanced, or AI-generated. Built on Lightchain mainnet.",
+  "tags": ["NFT", "MARKETPLACE", "AI"],
+  "iconSrc": "/images/dapp-item-logo/orcamint-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/orcamint-thumb.png",
+  "externalUrl": "https://orcamint.xyz"
+}
