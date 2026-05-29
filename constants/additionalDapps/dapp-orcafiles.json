@@ -1,10 +1,11 @@
 {
   "id": "dapp-orcafiles",
   "name": "OrcaFiles",
-  "description": "Browser-based encrypted file organizer powered by Lightchain AIVM. Organize, encrypt, and back up files locally with AES-256 \u2014 no server, no uploads, nothing leaves your device. AI auto-tagging and smart chat are powered by AIVM. Wallet login, LCAI payments, and tiered plans (Free / Home / Pro) make it the only file manager built natively on Lightchain.",
+  "tagline": "Encrypted file management — no cloud, no uploads",
+  "description": "Browser-based encrypted file organizer powered by Lightchain AIVM. Organize, encrypt, and back up files locally with AES-256 — no server, no uploads, nothing leaves your device. AI auto-tagging and smart chat are powered by AIVM. Wallet login, LCAI payments, and tiered plans (Free / Home / Pro) make it the only file manager built natively on Lightchain.",
   "tags": [
     "TOOLS",
-    "STORAGE",
+    "INFRA",
     "AI"
   ],
   "iconSrc": "/images/dapp-item-logo/orcafiles.png",
