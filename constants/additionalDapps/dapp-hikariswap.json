@@ -1,0 +1,9 @@
+{
+  "id": "dapp-hikariswap",
+  "name": "HikariSwap",
+  "description": "HikariSwap is the first decentralized exchange on Lightchain, live on Mainnet and Testnet. Launch your own LC20 token, add liquidity, and start trading instantly.",
+  "tags": ["DEX", "DEFI", "SWAP"],
+  "iconSrc": "/images/dapp-item-logo/thumb-hikariswap.png",
+  "imageSrc": "/images/dapp-item-thumb/hikariswap.png",
+  "externalUrl": "https://hikariswap.com"
+}
