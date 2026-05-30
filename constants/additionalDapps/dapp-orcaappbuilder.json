@@ -1,0 +1,9 @@
+{
+  "id": "dapp-orcaappbuilder",
+  "name": "OrcaAppBuilder",
+  "description": "A step-by-step dApp builder companion for Lightchain AI. No coding background needed — brainstorm ideas, get a full build plan, and launch your app on GitHub Pages for free. Includes AI-powered help, a troubleshooter, and real examples from the Orca Pod.",
+  "tags": ["TOOLS", "EDUCATION"],
+  "iconSrc": "/images/dapp-item-logo/orcaappbuilder.png",
+  "imageSrc": "/images/dapp-item-thumb/orcaappbuilder-thumb.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/orcaappbuilder/"
+}
