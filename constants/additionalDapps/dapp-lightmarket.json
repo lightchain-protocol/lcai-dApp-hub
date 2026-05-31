@@ -1,0 +1,9 @@
+{
+  "id": "dapp-lightmarket",
+  "name": "LightMarket",
+  "description": "The first AI-native prediction market on LightchainAI. Every outcome resolved by verifiable on-chain LCAI inference — no human oracles.",
+  "tags": ["AI", "INFERENCE", "MAINNET"],
+  "iconSrc": "/images/dapp-item-logo/lightmarket.png",
+  "imageSrc": "/images/dapp-item-thumb/lightmarket.png",
+  "externalUrl": "https://lightmarket-frontend.vercel.app"
+}
