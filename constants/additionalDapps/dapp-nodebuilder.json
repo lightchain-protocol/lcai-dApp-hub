@@ -1,7 +1,7 @@
 {
   "id": "dapp-nodebuilder",
   "name": "Node Builder",
-  "description": "FREE \u2014 Guided setup wizard for Lightchain AI worker nodes, built by a real operator. Every command is copy-paste ready, every gotcha is documented, AI assistant answers your questions in plain English. No developer background needed. More nodes = stronger Lightchain.",
+  "description": "FREE — Guided setup wizard for Lightchain AI worker nodes, built by a real operator. Every command is copy-paste ready, every gotcha is documented, AI assistant answers your questions in plain English. No developer background needed. More nodes = stronger Lightchain.",
   "tags": [
     "AI",
     "TOOLS",
@@ -9,5 +9,5 @@
   ],
   "iconSrc": "/images/dapp-item-logo/nodebuilder-logo.png",
   "imageSrc": "/images/dapp-item-thumb/nodebuilder-thumb.png",
-  "externalUrl": "https://keiko-dev-lcai.github.io/orcanode/"
+  "externalUrl": "https://orcanode.win"
 }
