@@ -2,8 +2,13 @@
   "id": "dapp-smartcontractexplainer",
   "name": "Smart Contract Explainer",
   "description": "Paste any smart contract address and instantly get a plain-English explanation of what it does. Auto-detects the chain, powered by Lightchain AIVM.",
-  "tags": ["AI", "TOOLS", "MAINNET"],
+  "tags": [
+    "AI",
+    "TOOLS",
+    "MAINNET"
+  ],
   "iconSrc": "/images/dapp-item-logo/orca-icon.png",
   "imageSrc": "/images/dapp-item-thumb/orca-thumb.png",
-  "externalUrl": "https://smartcontractexplainer.xyz"
+  "externalUrl": "https://smartcontractexplainer.xyz",
+  "x": "x.com/KeikoDevLCAI"
 }
