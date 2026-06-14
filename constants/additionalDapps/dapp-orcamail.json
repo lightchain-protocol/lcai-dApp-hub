@@ -1,7 +1,7 @@
 {
   "id": "dapp-orcamail",
   "name": "OrcaMail",
-  "description": "Wallet-to-wallet encrypted messaging on Lightchain. Send and receive private on-chain messages directly between wallets \u2014 no middlemen, no surveillance, spam filtering built in.",
+  "description": "Wallet-to-wallet encrypted messaging on Lightchain. Send and receive private on-chain messages directly between wallets — no middlemen, no surveillance, spam filtering built in.",
   "tags": [
     "TOOLS",
     "SOCIAL",
@@ -9,5 +9,6 @@
   ],
   "iconSrc": "/images/dapp-item-logo/orcamail.png",
   "imageSrc": "/images/dapp-item-thumb/orcamail-thumb.png",
-  "externalUrl": "https://orcamail.ai"
+  "externalUrl": "https://orcamail.ai",
+  "x": "x.com/KeikoDevLCAI"
 }
