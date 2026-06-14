@@ -2,8 +2,14 @@
   "id": "dapp-orcamint",
   "name": "OrcaMint",
   "description": "The first truly on-chain NFT platform on Lightchain. Your artwork is stored directly on the blockchain — no IPFS, no cloud storage, no servers that can disappear. Every other NFT platform gives you a receipt pointing to a server. OrcaMint puts the actual art on-chain, permanently. Mint for free, create collections for $1. AI-powered via AIVM. Built on Lightchain mainnet.",
-  "tags": ["NFT", "MARKETPLACE", "AI", "DEFI"],
+  "tags": [
+    "NFT",
+    "MARKETPLACE",
+    "AI",
+    "DEFI"
+  ],
   "iconSrc": "/images/dapp-item-logo/orcamint-logo.png",
   "imageSrc": "/images/dapp-item-thumb/orcamint-thumb.png",
-  "externalUrl": "https://orcamint.xyz"
+  "externalUrl": "https://orcamint.xyz",
+  "x": "x.com/KeikoDevLCAI"
 }
