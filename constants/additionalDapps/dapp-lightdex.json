@@ -1,7 +1,7 @@
 {
   "id": "dapp-lightdex",
   "name": "LightDex",
-  "description": "A community-built decentralized exchange on Lightchain Mainnet. Swap LCAI, USDT, and LC20 tokens with a 0.30% fee (0.25% to liquidity providers, 0.05% protocol). AI-powered token safety scanner, real-time market commentary, gas estimates, and swap assistant — all via Lightchain AIVM.",
+  "description": "A community-built decentralized exchange interface on Lightchain Mainnet. Explore swap UI, token charts, AI safety scanner, and market tools at lightdex.win. Static frontend \u2014 connect your wallet to interact. Railway backend removed June 2026; full on-chain swap integration in progress.",
   "tags": [
     "DEX",
     "DEFI",
