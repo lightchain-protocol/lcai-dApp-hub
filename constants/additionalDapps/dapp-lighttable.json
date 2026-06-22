@@ -1,7 +1,7 @@
 {
   "id": "dapp-lighttable",
   "name": "LightTable",
-  "description": "A community cookbook where good recipes earn their keep. Post a dish, tip the cooks you love in LCAI, and Ask the Kitchen — a real on-chain AIVM chef that adapts any recipe, swaps ingredients, and plans meals. Hands-free Cook Mode and chef ranks included.",
+  "description": "A community cookbook where good recipes earn their keep. Post a dish, tip cooks in LCAI, and ask an on-chain AIVM chef to adapt any recipe.",
   "tags": ["AI", "SOCIAL", "TOOLS"],
   "iconSrc": "/images/dapp-item-logo/lighttable-icon.png",
   "imageSrc": "/images/dapp-item-thumb/lighttable-thumb.png",
