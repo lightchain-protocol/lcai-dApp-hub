@@ -1,14 +1,14 @@
 {
   "id": "dapp-lightdex",
   "name": "LightDex",
-  "description": "A community-built decentralized exchange interface on Lightchain Mainnet. Explore swap UI, token charts, AI safety scanner, and market tools at lightdex.win. Static frontend \u2014 connect your wallet to interact. Railway backend removed June 2026; full on-chain swap integration in progress.",
+  "description": "Community DEX on Lightchain Mainnet (Uniswap V2 fork). Swap UI, live LCAI charts, liquidity and portfolio tools at lightdex.win. Secure factory/router redeployed 2026-07-02 — connect wallet to interact on-chain. Independent from official LCAI Swap; liquidity pools pending community seeding.",
   "tags": [
     "DEX",
     "DEFI",
     "SWAP",
     "AMM",
-    "AI",
-    "MAINNET"
+    "MAINNET",
+    "COMMUNITY"
   ],
   "iconSrc": "/images/dapp-item-logo/lightdex-logo.png",
   "imageSrc": "/images/dapp-item-thumb/lightdex-thumb.png",
