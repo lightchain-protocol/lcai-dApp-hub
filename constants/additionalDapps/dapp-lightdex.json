@@ -1,0 +1,17 @@
+{
+  "id": "dapp-lightdex",
+  "name": "LightDex",
+  "description": "Community DEX on Lightchain Mainnet (Uniswap V2 fork). Swap UI, live LCAI charts, liquidity and portfolio tools at lightdex.win. Secure factory/router redeployed 2026-07-02 — connect wallet to interact on-chain. Independent from official LCAI Swap; liquidity pools pending community seeding.",
+  "tags": [
+    "DEX",
+    "DEFI",
+    "SWAP",
+    "AMM",
+    "MAINNET",
+    "COMMUNITY"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lightdex-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/lightdex-thumb.png",
+  "externalUrl": "https://lightdex.win",
+  "x": "x.com/KeikoDevLCAI"
+}
