@@ -1,0 +1,13 @@
+{
+  "id": "dapp-lightmarket",
+  "name": "LightMarket",
+  "description": "The first AI-native prediction market on LightchainAI. Every outcome is resolved by verifiable on-chain LCAI inference and anchored with a Proof of Intelligence attestation.",
+  "tags": [
+    "AI",
+    "INFERENCE",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lightmarket.png",
+  "imageSrc": "/images/dapp-item-thumb/lightmarket.png",
+  "externalUrl": "https://lightmarket.app"
+}
