@@ -1,0 +1,16 @@
+{
+  "id": "dapp-lightdex",
+  "name": "LightDex",
+  "description": "Community DEX on Lightchain Mainnet (Chain 9200). Swap UI, liquidity tools, charts, and portfolio at lightdex.win \u2014 Uniswap V2 fork. Independent community project, not an official Lightchain product. Liquidity and L1 token pairs will expand as bridged assets (e.g. USDT) become available.",
+  "tags": [
+    "DEX",
+    "DEFI",
+    "SWAP",
+    "AMM",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lightdex.png",
+  "imageSrc": "/images/dapp-item-thumb/lightdex-thumb.png",
+  "externalUrl": "https://lightdex.win",
+  "x": "x.com/KeikoDevLCAI"
+}
