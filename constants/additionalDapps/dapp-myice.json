@@ -1,0 +1,14 @@
+{
+  "id": "dapp-myice",
+  "name": "MyICE",
+  "description": "Emergency medical ID and health vault on Lightchain. Meds, allergies, vitals, plus AI help with LCAI.",
+  "tags": [
+    "HEALTH",
+    "MAINNET",
+    "AI"
+  ],
+  "iconSrc": "/images/dapp-item-logo/myice.png",
+  "imageSrc": "/images/dapp-item-thumb/myice-thumb.png",
+  "externalUrl": "https://myice.win",
+  "x": "x.com/KeikoDevLCAI"
+}
