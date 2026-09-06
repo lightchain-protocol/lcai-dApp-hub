@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcaappbuilder",
+  "name": "OrcaAppBuilder",
+  "description": "Lightchain dApp builder companion. Brainstorm, plan, and launch with AIVM help \u2014 free for builders.",
+  "tags": [
+    "TOOLS",
+    "AI",
+    "EDUCATION"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcaappbuilder.png",
+  "imageSrc": "/images/dapp-item-thumb/orcaappbuilder-thumb.png",
+  "externalUrl": "https://orcaappbuilder.win",
+  "x": "x.com/KeikoDevLCAI"
+}
