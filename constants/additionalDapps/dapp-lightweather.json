@@ -1,0 +1,14 @@
+{
+  "id": "dapp-lightweather",
+  "name": "LightWeather",
+  "description": "Free AI weather on Lightchain AIVM \u2014 forecasts, alerts, UV, and chat. Premium upgrade in LCAI.",
+  "tags": [
+    "AI",
+    "TOOLS",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lightweather.png",
+  "imageSrc": "/images/dapp-item-thumb/lightweather-thumb.png",
+  "externalUrl": "https://lightweather.win",
+  "x": "x.com/KeikoDevLCAI"
+}
