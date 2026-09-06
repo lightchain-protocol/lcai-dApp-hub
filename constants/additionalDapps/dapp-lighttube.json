@@ -1,0 +1,14 @@
+{
+  "id": "dapp-lighttube",
+  "name": "LightTube",
+  "description": "Permanent on-chain video on Lightchain. No cloud or ads. Watch free; uploads use LCAI gas.",
+  "tags": [
+    "VIDEO",
+    "STORAGE",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lighttube.png",
+  "imageSrc": "/images/dapp-item-thumb/lighttube-thumb.png",
+  "externalUrl": "https://lighttube.win",
+  "x": "x.com/KeikoDevLCAI"
+}
