@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcaguard",
+  "name": "OrcaGuard",
+  "description": "Free Lightchain crypto safety checker. AI scam analysis for contracts, wallets, and tokens.",
+  "tags": [
+    "TOOLS",
+    "SECURITY",
+    "AI"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcaguard.png",
+  "imageSrc": "/images/dapp-item-thumb/orcaguard-thumb.png",
+  "externalUrl": "https://orcaguard.win",
+  "x": "x.com/KeikoDevLCAI"
+}
