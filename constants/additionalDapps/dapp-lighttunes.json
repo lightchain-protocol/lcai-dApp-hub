@@ -1,0 +1,14 @@
+{
+  "id": "dapp-lighttunes",
+  "name": "LightTunes",
+  "description": "Permanent on-chain music on Lightchain. Listen free; upload songs with LCAI gas. No takedowns.",
+  "tags": [
+    "MUSIC",
+    "STORAGE",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lighttunes.png",
+  "imageSrc": "/images/dapp-item-thumb/lighttunes-thumb.png",
+  "externalUrl": "https://lighttunes.win",
+  "x": "x.com/KeikoDevLCAI"
+}
