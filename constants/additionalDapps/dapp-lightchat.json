@@ -1,0 +1,14 @@
+{
+  "id": "dapp-lightchat",
+  "name": "LightChat",
+  "description": "Wallet-to-wallet encrypted chat and video on Lightchain. Free messaging; premium video in LCAI.",
+  "tags": [
+    "SOCIAL",
+    "MAINNET",
+    "TOOLS"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lightchat.png",
+  "imageSrc": "/images/dapp-item-thumb/lightchat-thumb.png",
+  "externalUrl": "https://lightchat.chat",
+  "x": "x.com/KeikoDevLCAI"
+}
