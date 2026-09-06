@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcafiles",
+  "name": "OrcaFiles",
+  "description": "Encrypted file organizer on Lightchain. Client-side encryption; powered by AIVM. Built for LCAI users.",
+  "tags": [
+    "TOOLS",
+    "AI",
+    "STORAGE"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcafiles.png",
+  "imageSrc": "/images/dapp-item-thumb/orcafiles-thumb.png",
+  "externalUrl": "https://orcafiles.ai",
+  "x": "x.com/KeikoDevLCAI"
+}
