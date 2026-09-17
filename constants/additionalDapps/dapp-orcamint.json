@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcamint",
+  "name": "OrcaMint",
+  "description": "On-chain NFT marketplace on Lightchain. Art stored on-chain (not IPFS). Mint free; collections paid in LCAI.",
+  "tags": [
+    "NFT",
+    "MARKETPLACE",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcamint.png",
+  "imageSrc": "/images/dapp-item-thumb/orcamint-thumb.png",
+  "externalUrl": "https://orcamint.xyz",
+  "x": "x.com/KeikoDevLCAI"
+}
