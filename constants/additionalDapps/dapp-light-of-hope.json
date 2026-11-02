@@ -1,0 +1,13 @@
+{
+  "id": "dapp-light-of-hope",
+  "name": "Light of Hope | Hope Signal",
+  "description": "A testnet community-support signal from Light of Hope, using a nonpayable smart contract on Lightchain AI without transferring donations.",
+  "tags": [
+    "SOCIAL",
+    "CONTRACTS",
+    "TESTNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/light-of-hope.png",
+  "imageSrc": "/images/dapp-item-thumb/light-of-hope.jpg",
+  "externalUrl": "https://light-of-hope.net/lightchain-pilot/"
+}
